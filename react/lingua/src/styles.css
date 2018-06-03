@@ -2,10 +2,33 @@
     margin: 0 !important;
 }
 
+.padding__0 {
+    padding: 0 !important;
+}
+
 .bold-text {
     font-weight: bold;
 }
 
 .center-text {
     text-align: center;
+}
+
+.circle-img {
+    object-fit: cover;
+    width: 4em !important;
+    height: 4em !important;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex__1 {
+    flex: 1;
+}
+
+.height__100pc {
+    height: 100%;
 }

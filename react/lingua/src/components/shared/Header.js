@@ -44,7 +44,7 @@ class Header extends Component {
                     <NavLinks/>
                     <NavSearch/>
                 </Navbar>
-                <Image className="avatar" src={this.props.userAvatarSrc} circle />
+                <Image className="circle-img user-img" src={this.props.userAvatarSrc} circle />
             </div>
         );
     }

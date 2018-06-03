@@ -1,0 +1,9 @@
+.lang-img {
+    display: inline-flex;
+}
+
+.lang-name {
+    margin-left: 0.5em;
+    display: inline-flex;
+    font-weight: bold;
+}

@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { Grid, Row, Col, Panel, Tabs, Tab } from 'react-bootstrap';
+import React, {Component} from 'react';
 
 import './MainPage.css';
 import '../../styles.css';
@@ -15,19 +14,15 @@ class MainPage extends Component {
             <div>
                 <Header/>
                 <div className="main-content">
-                    <Grid fluid>
-                        <Row>
-                            <Col md={2}>
-                                <Filter/>
-                            </Col>
-                            <Col md={6}>
-                                <Courses/>
-                            </Col>
-                            <Col md={4}>
-                                <CourseInfo/>
-                            </Col>
-                        </Row>
-                    </Grid>
+                    <div className="main-content-col main-content-col-md-2">
+                        <Filter/>
+                    </div>
+                    <div className="main-content-col main-content-col-md-6">
+                        <Courses/>
+                    </div>
+                    <div className="main-content-col main-content-col-md-4">
+                        <CourseInfo/>
+                    </div>
                 </div>
             </div>
         );

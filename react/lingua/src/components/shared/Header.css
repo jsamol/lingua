@@ -29,10 +29,9 @@
     background-color: #dddddd;
 }
 
-.avatar {
+.user-img {
     position: fixed;
     right: 50px;
-    object-fit: cover;
     width: 5.5em !important;
     height: 5.5em !important;
     z-index: 10;
