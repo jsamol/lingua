@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "default_user",
+      "img": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      "languages": [
+        0, 1, 2, 3
+      ]
+    }
+  ],
+
+  "languages": [
+    {
+      "id": 0,
+      "name": "English",
+      "img": ""
+    },
+    {
+      "id": 1,
+      "name": "German",
+      "img": ""
+    },
+    {
+      "id": 2,
+      "name": "Spanish",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Polish",
+      "img": ""
+    }
+  ],
+
+  "courses": [
+
+  ]
+}
