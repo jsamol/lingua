@@ -107,12 +107,12 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 Create React App is divided into two packages:
 
-* `create-react-app` is a global command-line utility that you use to create new projects.
+* `create-react-appReducer` is a global command-line utility that you use to create new projects.
 * `react-scripts` is a development dependency in the generated projects (including this one).
 
-You almost never need to update `create-react-app` itself: it delegates all the setup to `react-scripts`.
+You almost never need to update `create-react-appReducer` itself: it delegates all the setup to `react-scripts`.
 
-When you run `create-react-app`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.
+When you run `create-react-appReducer`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.
 
 To update an existing project to a new version of `react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md), find the version you’re currently on (check `package.json` in this folder if you’re not sure), and apply the migration instructions for the newer versions.
 
@@ -167,7 +167,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
+Runs the appReducer in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
@@ -180,11 +180,11 @@ See the section about [running tests](#running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
+Builds the appReducer for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Your appReducer is ready to be deployed!
 
 See the section about [deployment](#deployment) for more information.
 
@@ -267,7 +267,7 @@ Visual Studio Code and WebStorm support debugging out of the box with Create Rea
 
 You would need to have the latest version of [VS Code](https://code.visualstudio.com) and VS Code [Chrome Debugger Extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) installed.
 
-Then add the block below to your `launch.json` file and put it inside the `.vscode` folder in your app’s root directory.
+Then add the block below to your `launch.json` file and put it inside the `.vscode` folder in your appReducer’s root directory.
 
 ```json
 {
@@ -286,7 +286,7 @@ Then add the block below to your `launch.json` file and put it inside the `.vsco
 ```
 >Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).
 
-Start your app by running `npm start`, and start debugging in VS Code by pressing `F5` or by clicking the green debug icon. You can now write code, set breakpoints, make changes to the code, and debug your newly modified code—all from your editor.
+Start your appReducer by running `npm start`, and start debugging in VS Code by pressing `F5` or by clicking the green debug icon. You can now write code, set breakpoints, make changes to the code, and debug your newly modified code—all from your editor.
 
 Having problems with VS Code Debugging? Please see their [troubleshooting guide](https://github.com/Microsoft/vscode-chrome-debug/blob/master/README.md#troubleshooting).
 
@@ -298,7 +298,7 @@ In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and s
 
 >Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).
 
-Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
+Start your appReducer by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
 
 The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
 
@@ -360,7 +360,7 @@ Note that normally you wouldn’t edit files in the `public` folder very often. 
 
 If you need to dynamically update the page title based on the content, you can use the browser [`document.title`](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) API. For more complex scenarios when you want to change the title from React components, you can use [React Helmet](https://github.com/nfl/react-helmet), a third party library.
 
-If you use a custom server for your app in production and want to modify the title before it gets sent to the browser, you can follow advice in [this section](#generating-dynamic-meta-tags-on-the-server). Alternatively, you can pre-build each page as a static HTML file which then loads the JavaScript bundle, which is covered [here](#pre-rendering-into-static-html-files).
+If you use a custom server for your appReducer in production and want to modify the title before it gets sent to the browser, you can follow advice in [this section](#generating-dynamic-meta-tags-on-the-server). Alternatively, you can pre-build each page as a static HTML file which then loads the JavaScript bundle, which is covered [here](#pre-rendering-into-static-html-files).
 
 ## Installing a Dependency
 
@@ -429,7 +429,7 @@ Learn more about ES6 modules:
 
 ## Code Splitting
 
-Instead of downloading the entire app before users can use it, code splitting allows you to split your code into small chunks which you can then load on demand.
+Instead of downloading the entire appReducer before users can use it, code splitting allows you to split your code into small chunks which you can then load on demand.
 
 This project setup supports code splitting via [dynamic `import()`](http://2ality.com/2017/01/import-operator.html#loading-code-on-demand). Its [proposal](https://github.com/tc39/proposal-dynamic-import) is in stage 3. The `import()` function-like form takes the module name as an argument and returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) which always resolves to the namespace object of the module.
 
@@ -442,7 +442,7 @@ const moduleA = 'Hello';
 
 export { moduleA };
 ```
-### `App.js`
+### `AppReducer.js`
 
 ```js
 import React, { Component } from 'react';
@@ -576,7 +576,7 @@ Then in `package.json`, add the following lines to `scripts`:
 
 >Note: To use a different preprocessor, replace `build-css` and `watch-css` commands according to your preprocessor’s documentation.
 
-Now you can rename `src/App.css` to `src/App.scss` and run `npm run watch-css`. The watcher will find every Sass file in `src` subdirectories, and create a corresponding CSS file next to it, in our case overwriting `src/App.css`. Since `src/App.js` still imports `src/App.css`, the styles become a part of your application. You can now edit `src/App.scss`, and `src/App.css` will be regenerated.
+Now you can rename `src/App.css` to `src/App.scss` and run `npm run watch-css`. The watcher will find every Sass file in `src` subdirectories, and create a corresponding CSS file next to it, in our case overwriting `src/App.css`. Since `src/AppReducer.js` still imports `src/App.css`, the styles become a part of your application. You can now edit `src/App.scss`, and `src/App.css` will be regenerated.
 
 To share variables between Sass files, you can use Sass imports. For example, `src/App.scss` and other component style files could include `@import "./shared.scss";` with variable definitions.
 
@@ -783,13 +783,13 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 // components takes precedence over default styles.
 ```
 
-Import required React Bootstrap components within ```src/App.js``` file or your custom component files:
+Import required React Bootstrap components within ```src/AppReducer.js``` file or your custom component files:
 
 ```js
 import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 ```
 
-Now you are ready to use the imported React Bootstrap components within your component hierarchy defined in the render method. Here is an example [`App.js`](https://gist.githubusercontent.com/gaearon/85d8c067f6af1e56277c82d19fd4da7b/raw/6158dd991b67284e9fc8d70b9d973efe87659d72/App.js) redone using React Bootstrap.
+Now you are ready to use the imported React Bootstrap components within your component hierarchy defined in the render method. Here is an example [`AppReducer.js`](https://gist.githubusercontent.com/gaearon/85d8c067f6af1e56277c82d19fd4da7b/raw/6158dd991b67284e9fc8d70b9d973efe87659d72/App.js) redone using React Bootstrap.
 
 ### Using a Custom Theme
 
@@ -798,7 +798,7 @@ We suggest the following approach:
 
 * Create a new package that depends on the package you wish to customize, e.g. Bootstrap.
 * Add the necessary build steps to tweak the theme, and publish your package on npm.
-* Install your own theme npm package as a dependency of your app.
+* Install your own theme npm package as a dependency of your appReducer.
 
 Here is an example of adding a [customized Bootstrap](https://medium.com/@tacomanator/customizing-create-react-app-aa9ffb88165) that follows these steps.
 
@@ -813,7 +813,7 @@ To add Flow to a Create React App project, follow these steps:
 1. Run `npm install --save flow-bin` (or `yarn add flow-bin`).
 2. Add `"flow": "flow"` to the `scripts` section of your `package.json`.
 3. Run `npm run flow init` (or `yarn flow init`) to create a [`.flowconfig` file](https://flowtype.org/docs/advanced-configuration.html) in the root directory.
-4. Add `// @flow` to any files you want to type check (for example, to `src/App.js`).
+4. Add `// @flow` to any files you want to type check (for example, to `src/AppReducer.js`).
 
 Now you can run `npm run flow` (or `yarn flow`) to check the files for type errors.
 You can optionally use an IDE like [Nuclide](https://nuclide.io/docs/languages/flow/) for a better integrated experience.
@@ -837,9 +837,9 @@ Alternatively you may use `yarn`:
 yarn add react-router-dom
 ```
 
-To try it, delete all the code in `src/App.js` and replace it with any of the examples on its website. The [Basic Example](https://reacttraining.com/react-router/web/example/basic) is a good place to get started.
+To try it, delete all the code in `src/AppReducer.js` and replace it with any of the examples on its website. The [Basic Example](https://reacttraining.com/react-router/web/example/basic) is a good place to get started.
 
-Note that [you may need to configure your production server to support client-side routing](#serving-apps-with-client-side-routing) before deploying your app.
+Note that [you may need to configure your production server to support client-side routing](#serving-apps-with-client-side-routing) before deploying your appReducer.
 
 ## Adding Custom Environment Variables
 
@@ -849,7 +849,7 @@ Your project can consume variables declared in your environment as if they were 
 default you will have `NODE_ENV` defined for you, and any other environment variables starting with
 `REACT_APP_`.
 
-**The environment variables are embedded during the build time**. Since Create React App produces a static HTML/CSS/JS bundle, it can’t possibly read them at runtime. To read them at runtime, you would need to load HTML into memory on the server and replace placeholders in runtime, just like [described here](#injecting-data-from-the-server-into-the-page). Alternatively you can rebuild the app on the server anytime you change them.
+**The environment variables are embedded during the build time**. Since Create React App produces a static HTML/CSS/JS bundle, it can’t possibly read them at runtime. To read them at runtime, you would need to load HTML into memory on the server and replace placeholders in runtime, just like [described here](#injecting-data-from-the-server-into-the-page). Alternatively you can rebuild the appReducer on the server anytime you change them.
 
 >Note: You must create custom environment variables beginning with `REACT_APP_`. Any other variables except `NODE_ENV` will be ignored to avoid accidentally [exposing a private key on the machine that could have the same name](https://github.com/facebookincubator/create-react-app/issues/865#issuecomment-252199527). Changing any environment variables will require you to restart the development server if it is running.
 
@@ -879,7 +879,7 @@ render() {
 
 During the build, `process.env.REACT_APP_SECRET_CODE` will be replaced with the current value of the `REACT_APP_SECRET_CODE` environment variable. Remember that the `NODE_ENV` variable will be set for you automatically.
 
-When you load the app in the browser and inspect the `<input>`, you will see its value set to `abcdef`, and the bold text will show the environment provided when using `npm start`:
+When you load the appReducer in the browser and inspect the `<input>`, you will see its value set to `abcdef`, and the bold text will show the environment provided when using `npm start`:
 
 ```html
 <div>
@@ -902,7 +902,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 ```
 
-When you compile the app with `npm run build`, the minification step will strip out this condition, and the resulting bundle will be smaller.
+When you compile the appReducer with `npm run build`, the minification step will strip out this condition, and the resulting bundle will be smaller.
 
 ### Referencing Environment Variables in the HTML
 
@@ -1029,7 +1029,7 @@ You can learn more about making AJAX requests from React components in [the FAQ 
 
 ## Integrating with an API Backend
 
-These tutorials will help you to integrate your app with an API backend running on another port,
+These tutorials will help you to integrate your appReducer with an API backend running on another port,
 using `fetch()` to access it.
 
 ### Node
@@ -1045,8 +1045,8 @@ You can find the companion GitHub repository [here](https://github.com/fullstack
 
 >Note: this feature is available with `react-scripts@0.2.3` and higher.
 
-People often serve the front-end React app from the same host and port as their backend implementation.<br>
-For example, a production setup might look like this after the app is deployed:
+People often serve the front-end React appReducer from the same host and port as their backend implementation.<br>
+For example, a production setup might look like this after the appReducer is deployed:
 
 ```
 /             - static server returns index.html with React app
@@ -1077,7 +1077,7 @@ If the `proxy` option is **not** flexible enough for you, alternatively you can:
 
 * [Configure the proxy yourself](#configuring-the-proxy-manually)
 * Enable CORS on your server ([here’s how to do it for Express](http://enable-cors.org/server_expressjs.html)).
-* Use [environment variables](#adding-custom-environment-variables) to inject the right server host and port into your app.
+* Use [environment variables](#adding-custom-environment-variables) to inject the right server host and port into your appReducer.
 
 ### "Invalid Host Header" Errors After Configuring Proxy
 
@@ -1093,7 +1093,7 @@ To work around it, you can specify your public development host in a file called
 HOST=mypublicdevhost.com
 ```
 
-If you restart the development server now and load the app from the specified host, it should work.
+If you restart the development server now and load the appReducer from the specified host, it should work.
 
 If you are still having issues or if you’re using a more exotic environment like a cloud editor, you can bypass the host check completely by adding a line to `.env.development.local`. **Note that this is dangerous and exposes your machine to remote code execution from malicious websites:**
 
@@ -1262,7 +1262,7 @@ Similarly to the previous section, you can leave some placeholders in the HTML t
     </script>
 ```
 
-Then, on the server, you can replace `__SERVER_DATA__` with a JSON of real data right before sending the response. The client code can then read `window.SERVER_DATA` to use it. **Make sure to [sanitize the JSON before sending it to the client](https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0) as it makes your app vulnerable to XSS attacks.**
+Then, on the server, you can replace `__SERVER_DATA__` with a JSON of real data right before sending the response. The client code can then read `window.SERVER_DATA` to use it. **Make sure to [sanitize the JSON before sending it to the client](https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0) as it makes your appReducer vulnerable to XSS attacks.**
 
 ## Running Tests
 
@@ -1287,7 +1287,7 @@ Jest will look for test files with any of the following popular naming conventio
 
 The `.test.js` / `.spec.js` files (or the `__tests__` folders) can be located at any depth under the `src` top level folder.
 
-We recommend to put the test files (or `__tests__` folders) next to the code they are testing so that relative imports appear shorter. For example, if `App.test.js` and `App.js` are in the same folder, the test just needs to `import App from './App'` instead of a long relative path. Colocation also helps find tests more quickly in larger projects.
+We recommend to put the test files (or `__tests__` folders) next to the code they are testing so that relative imports appear shorter. For example, if `App.test.js` and `AppReducer.js` are in the same folder, the test just needs to `import App from './App'` instead of a long relative path. Colocation also helps find tests more quickly in larger projects.
 
 ### Command Line Interface
 
@@ -1445,7 +1445,7 @@ and then use them in your tests like you normally do.
 
 >Note: this feature is available with `react-scripts@0.4.0` and higher.
 
-If your app uses a browser API that you need to mock in your tests or if you just need a global setup before running your tests, add a `src/setupTests.js` to your project. It will be automatically executed before running your tests.
+If your appReducer uses a browser API that you need to mock in your tests or if you just need a global setup before running your tests, add a `src/setupTests.js` to your project. It will be automatically executed before running your tests.
 
 For example:
 
@@ -1693,20 +1693,20 @@ Use the following [`launch.json`](https://code.visualstudio.com/docs/editor/debu
 
 ## Developing Components in Isolation
 
-Usually, in an app, you have a lot of UI components, and each of them has many different states.
+Usually, in an appReducer, you have a lot of UI components, and each of them has many different states.
 For an example, a simple button component could have following states:
 
 * In a regular state, with a text label.
 * In the disabled mode.
 * In a loading state.
 
-Usually, it’s hard to see these states without running a sample app or some examples.
+Usually, it’s hard to see these states without running a sample appReducer or some examples.
 
-Create React App doesn’t include any tools for this by default, but you can easily add [Storybook for React](https://storybook.js.org) ([source](https://github.com/storybooks/storybook)) or [React Styleguidist](https://react-styleguidist.js.org/) ([source](https://github.com/styleguidist/react-styleguidist)) to your project. **These are third-party tools that let you develop components and see all their states in isolation from your app**.
+Create React App doesn’t include any tools for this by default, but you can easily add [Storybook for React](https://storybook.js.org) ([source](https://github.com/storybooks/storybook)) or [React Styleguidist](https://react-styleguidist.js.org/) ([source](https://github.com/styleguidist/react-styleguidist)) to your project. **These are third-party tools that let you develop components and see all their states in isolation from your appReducer**.
 
 ![Storybook for React Demo](http://i.imgur.com/7CIAWpB.gif)
 
-You can also deploy your Storybook or style guide as a static app. This way, everyone in your team can view and review different states of UI components without starting a backend server or creating an account in your app.
+You can also deploy your Storybook or style guide as a static appReducer. This way, everyone in your team can view and review different states of UI components without starting a backend server or creating an account in your appReducer.
 
 ### Getting Started with Storybook
 
@@ -1718,7 +1718,7 @@ First, install the following npm package globally:
 npm install -g @storybook/cli
 ```
 
-Then, run the following command inside your app’s directory:
+Then, run the following command inside your appReducer’s directory:
 
 ```sh
 getstorybook
@@ -1758,7 +1758,7 @@ Then, add these scripts to your `package.json`:
      "start": "react-scripts start",
 ```
 
-Then, run the following command inside your app’s directory:
+Then, run the following command inside your appReducer’s directory:
 
 ```sh
 npm run styleguide
@@ -1783,8 +1783,8 @@ By default, the production build is a fully functional, offline-first
 Progressive Web Apps are faster and more reliable than traditional web pages, and provide an engaging mobile experience:
 
  * All static site assets are cached so that your page loads fast on subsequent visits, regardless of network connectivity (such as 2G or 3G). Updates are downloaded in the background.
- * Your app will work regardless of network state, even if offline. This means your users will be able to use your app at 10,000 feet and on the subway.
- * On mobile devices, your app can be added directly to the user's home screen, app icon and all. You can also re-engage users using web **push notifications**. This eliminates the need for the app store.
+ * Your appReducer will work regardless of network state, even if offline. This means your users will be able to use your appReducer at 10,000 feet and on the subway.
+ * On mobile devices, your appReducer can be added directly to the user's home screen, appReducer icon and all. You can also re-engage users using web **push notifications**. This eliminates the need for the appReducer store.
 
 The [`sw-precache-webpack-plugin`](https://github.com/goldhand/sw-precache-webpack-plugin)
 is integrated into production configuration,
@@ -1792,7 +1792,7 @@ and it will take care of generating a service worker file that will automaticall
 precache all of your local assets and keep them up to date as you deploy updates.
 The service worker will use a [cache-first strategy](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#cache-falling-back-to-network)
 for handling all requests for local assets, including the initial HTML, ensuring
-that your web app is reliably fast, even on a slow or unreliable network.
+that your web appReducer is reliably fast, even on a slow or unreliable network.
 
 ### Opting Out of Caching
 
@@ -1818,7 +1818,7 @@ it may take up to 24 hours for the cache to be invalidated.
 although to facilitate local testing, that policy
 [does not apply to `localhost`](http://stackoverflow.com/questions/34160509/options-for-testing-service-workers-via-http/34161385#34161385).
 If your production web server does not support HTTPS, then the service worker
-registration will fail, but the rest of your web app will remain functional.
+registration will fail, but the rest of your web appReducer will remain functional.
 
 1. Service workers are [not currently supported](https://jakearchibald.github.io/isserviceworkerready/)
 in all web browsers. Service worker registration [won't be attempted](src/registerServiceWorker.js)
@@ -1832,7 +1832,7 @@ changes you've made locally.
 
 1. If you *need* to test your offline-first service worker locally, build
 the application (using `npm run build`) and run a simple http server from your
-build directory. After running the build script, `create-react-app` will give
+build directory. After running the build script, `create-react-appReducer` will give
 instructions for one way to test your production build locally and the [deployment instructions](#deployment) have
 instructions for using other methods. *Be sure to always use an
 incognito window to avoid complications with your browser cache.*
@@ -1851,7 +1851,7 @@ network.
 1. Users aren't always familiar with offline-first web apps. It can be useful to
 [let the user know](https://developers.google.com/web/fundamentals/instant-and-offline/offline-ux#inform_the_user_when_the_app_is_ready_for_offline_consumption)
 when the service worker has finished populating your caches (showing a "This web
-app works offline!" message) and also let them know when the service worker has
+appReducer works offline!" message) and also let them know when the service worker has
 fetched the latest updates that will be available the next time they load the
 page (showing a "New content is available; please refresh." message). Showing
 this messages is currently left as an exercise to the developer, but as a
@@ -1871,13 +1871,13 @@ option in the `SWPrecacheWebpackPlugin` section of
 
 ### Progressive Web App Metadata
 
-The default configuration includes a web app manifest located at
+The default configuration includes a web appReducer manifest located at
 [`public/manifest.json`](public/manifest.json), that you can customize with
 details specific to your web application.
 
-When a user adds a web app to their homescreen using Chrome or Firefox on
+When a user adds a web appReducer to their homescreen using Chrome or Firefox on
 Android, the metadata in [`manifest.json`](public/manifest.json) determines what
-icons, names, and branding colors to use when the web app is displayed.
+icons, names, and branding colors to use when the web appReducer is displayed.
 [The Web App Manifest guide](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/)
 provides more context about what each field means, and how your customizations
 will affect your users' experience.
@@ -1920,7 +1920,7 @@ npm run analyze
 
 ## Deployment
 
-`npm run build` creates a `build` directory with a production build of your app. Set up your favorite HTTP server so that a visitor to your site is served `index.html`, and requests to static paths like `/static/js/main.<hash>.js` are served with the contents of the `/static/js/main.<hash>.js` file.
+`npm run build` creates a `build` directory with a production build of your appReducer. Set up your favorite HTTP server so that a visitor to your site is served `index.html`, and requests to static paths like `/static/js/main.<hash>.js` are served with the contents of the `/static/js/main.<hash>.js` file.
 
 ### Static Server
 
@@ -1963,7 +1963,7 @@ The choice of your server software isn’t important either. Since Create React 
 
 The `build` folder with static assets is the only output produced by Create React App.
 
-However this is not quite enough if you use client-side routing. Read the next section if you want to support URLs like `/todos/42` in your single-page app.
+However this is not quite enough if you use client-side routing. Read the next section if you want to support URLs like `/todos/42` in your single-page appReducer.
 
 ### Serving Apps with Client-Side Routing
 
@@ -2004,7 +2004,7 @@ service worker navigation routing can be configured or disabled by
 and [`navigateFallbackWhitelist`](https://github.com/GoogleChrome/sw-precache#navigatefallbackwhitelist-arrayregexp)
 options of the `SWPreachePlugin` [configuration](../config/webpack.config.prod.js).
 
-When users install your app to the homescreen of their device the default configuration will make a shortcut to `/index.html`. This may not work for client-side routers which expect the app to be served from `/`. Edit the web app manifest at [`public/manifest.json`](public/manifest.json) and change `start_url` to match the required URL scheme, for example:
+When users install your appReducer to the homescreen of their device the default configuration will make a shortcut to `/index.html`. This may not work for client-side routers which expect the appReducer to be served from `/`. Edit the web appReducer manifest at [`public/manifest.json`](public/manifest.json) and change `start_url` to match the required URL scheme, for example:
 
 ```js
   "start_url": ".",
@@ -2012,7 +2012,7 @@ When users install your app to the homescreen of their device the default config
 
 ### Building for Relative Paths
 
-By default, Create React App produces a build assuming your app is hosted at the server root.<br>
+By default, Create React App produces a build assuming your appReducer is hosted at the server root.<br>
 To override this, specify the `homepage` in your `package.json`, for example:
 
 ```js
@@ -2034,17 +2034,17 @@ For example:
 
 >Note: this feature is available with `react-scripts@0.9.0` and higher.
 
-If you are not using the HTML5 `pushState` history API or not using client-side routing at all, it is unnecessary to specify the URL from which your app will be served. Instead, you can put this in your `package.json`:
+If you are not using the HTML5 `pushState` history API or not using client-side routing at all, it is unnecessary to specify the URL from which your appReducer will be served. Instead, you can put this in your `package.json`:
 
 ```js
   "homepage": ".",
 ```
 
-This will make sure that all the asset paths are relative to `index.html`. You will then be able to move your app from `http://mywebsite.com` to `http://mywebsite.com/relativepath` or even `http://mywebsite.com/relative/path` without having to rebuild it.
+This will make sure that all the asset paths are relative to `index.html`. You will then be able to move your appReducer from `http://mywebsite.com` to `http://mywebsite.com/relativepath` or even `http://mywebsite.com/relative/path` without having to rebuild it.
 
 ### [Azure](https://azure.microsoft.com/)
 
-See [this](https://medium.com/@to_pe/deploying-create-react-app-on-microsoft-azure-c0f6686a4321) blog post on how to deploy your React app to Microsoft Azure.
+See [this](https://medium.com/@to_pe/deploying-create-react-app-on-microsoft-azure-c0f6686a4321) blog post on how to deploy your React appReducer to Microsoft Azure.
 
 See [this](https://medium.com/@strid/host-create-react-app-on-azure-986bc40d5bf2#.pycfnafbg) blog post or [this](https://github.com/ulrikaugustsson/azure-appservice-static) repo for a way to use automatic deployment to Azure App Service.
 
@@ -2052,7 +2052,7 @@ See [this](https://medium.com/@strid/host-create-react-app-on-azure-986bc40d5bf2
 
 Install the Firebase CLI if you haven’t already by running `npm install -g firebase-tools`. Sign up for a [Firebase account](https://console.firebase.google.com/) and create a new project. Run `firebase login` and login with your previous created Firebase account.
 
-Then run the `firebase init` command from your project’s root. You need to choose the **Hosting: Configure and deploy Firebase Hosting sites** and choose the Firebase project you created in the previous step. You will need to agree with `database.rules.json` being created, choose `build` as the public directory, and also agree to **Configure as a single-page app** by replying with `y`.
+Then run the `firebase init` command from your project’s root. You need to choose the **Hosting: Configure and deploy Firebase Hosting sites** and choose the Firebase project you created in the previous step. You will need to agree with `database.rules.json` being created, choose `build` as the public directory, and also agree to **Configure as a single-page appReducer** by replying with `y`.
 
 ```sh
     === Project Setup
@@ -2128,7 +2128,7 @@ For more information see [Add Firebase to your JavaScript Project](https://fireb
 #### Step 1: Add `homepage` to `package.json`
 
 **The step below is important!**<br>
-**If you skip it, your app will not deploy correctly.**
+**If you skip it, your appReducer will not deploy correctly.**
 
 Open your `package.json` and add a `homepage` field for your project:
 
@@ -2289,11 +2289,11 @@ When you build the project, Create React App will place the `public` folder cont
 
 ### [Now](https://zeit.co/now)
 
-Now offers a zero-configuration single-command deployment. You can use `now` to deploy your app for free.
+Now offers a zero-configuration single-command deployment. You can use `now` to deploy your appReducer for free.
 
 1. Install the `now` command-line tool either via the recommended [desktop tool](https://zeit.co/download) or via node with `npm install -g now`.
 
-2. Build your app by running `npm run build`.
+2. Build your appReducer by running `npm run build`.
 
 3. Move into the build directory by running `cd build`.
 
@@ -2303,13 +2303,13 @@ Now offers a zero-configuration single-command deployment. You can use `now` to 
     > Ready! https://your-project-name-tpspyhtdtk.now.sh (copied to clipboard)
     ```
 
-    Paste that URL into your browser when the build is complete, and you will see your deployed app.
+    Paste that URL into your browser when the build is complete, and you will see your deployed appReducer.
 
 Details are available in [this article.](https://zeit.co/blog/unlimited-static)
 
 ### [S3](https://aws.amazon.com/s3) and [CloudFront](https://aws.amazon.com/cloudfront/)
 
-See this [blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) on how to deploy your React app to Amazon Web Services S3 and CloudFront.
+See this [blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) on how to deploy your React appReducer to Amazon Web Services S3 and CloudFront.
 
 ### [Surge](https://surge.sh/)
 
