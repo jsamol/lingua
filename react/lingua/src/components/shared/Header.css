@@ -8,6 +8,7 @@
     background-color: #337ab7;
     flex-wrap: nowrap;
     align-items: center;
+    z-index: 100;
 }
 
 .navbar-container {
