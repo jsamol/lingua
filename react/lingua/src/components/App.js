@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
+import { DEFAULT_USER_ID } from '../utils/config/DefaultConfig';
 
 import './App.css';
 import MainPage from './mainpage/MainPage';
 
 class App extends Component {
+    componentWillMount() {
+        this.props.setUser(DEFAULT_USER_ID);
+    }
+
     render() {
         return (
             <BrowserRouter>
@@ -15,5 +22,9 @@ class App extends Component {
         );
     }
 }
+
+App.propTypes = {
+    setUser: PropTypes.func.isRequired
+};
 
 export default App;

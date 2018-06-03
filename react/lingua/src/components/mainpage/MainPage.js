@@ -4,7 +4,7 @@ import { Grid, Row, Col, Panel, Tabs, Tab } from 'react-bootstrap';
 import './MainPage.css';
 import '../../styles.css';
 
-import Header from '../shared/Header';
+import Header from '../../containers/shared/HeaderContainer';
 import Filter from './filter/Filter';
 import Courses from './courses/Courses';
 import CourseInfo from './courseinfo/CourseInfo';

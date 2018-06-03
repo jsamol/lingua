@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Navbar, Nav, NavItem, FormGroup, FormControl, Image } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 import "../../styles.css";
 import "./Header.css";
@@ -43,10 +44,14 @@ class Header extends Component {
                     <NavLinks/>
                     <NavSearch/>
                 </Navbar>
-                <Image className="avatar" src="https://static.pexels.com/photos/296886/pexels-photo-296886.jpeg" circle />
+                <Image className="avatar" src={this.props.userAvatarSrc} circle />
             </div>
         );
     }
 }
+
+Header.propTypes = {
+    userAvatarSrc: PropTypes.string.isRequired
+} ;
 
 export default Header;
