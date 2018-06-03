@@ -1,0 +1,37 @@
+.header-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #337ab7;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    position: fixed;
+    left: 50px;
+    right: 60px;
+    z-index: 1;
+}
+
+.navbar-container .container {
+    margin-left: 0;
+    margin-right: 60px;
+    width: 100%;
+}
+
+.nav-item:hover {
+    background-color: #dddddd;
+}
+
+.avatar {
+    position: fixed;
+    right: 50px;
+    width: 5.5em !important;
+    height: 5.5em !important;
+    z-index: 10;
+}
