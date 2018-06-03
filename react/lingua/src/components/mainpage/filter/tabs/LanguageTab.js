@@ -15,13 +15,29 @@ function LanguageItem(props) {
 }
 
 class LanguageTab extends Component {
+    constructor(props) {
+        super(props);
+
+        this.onLanguageClick = this.onLanguageClick.bind(this);
+    }
+
+    onLanguageClick(event) {
+        const target = event.target;
+        const id = parseInt(target.id);
+
+        this.props.toggleLanguageFilter(id);
+    }
 
     render() {
         return(
             <ListGroup>
-                {this.props.languages.map((language, id) => {
+                {this.props.languages.map(language => {
+                    console.log(this.props.filterLanguages, language.id, this.props.filterLanguages.includes(language.id));
                     return (
-                        <ListGroupItem key={language.id}>
+                        <ListGroupItem onClick={this.onLanguageClick}
+                                       id={language.id}
+                                       key={language.id}
+                                       active={this.props.filterLanguages.includes(language.id)}>
                             <LanguageItem img={language.img} title={language.name}/>
                         </ListGroupItem>
                     );
@@ -34,7 +50,11 @@ class LanguageTab extends Component {
 LanguageTab.propTypes = {
     languages: PropTypes.arrayOf(
         PropTypes.object
-    ).isRequired
+    ).isRequired,
+    filterLanguages: PropTypes.arrayOf(
+        PropTypes.number
+    ).isRequired,
+    toggleLanguageFilter: PropTypes.func.isRequired
 };
 
 export default LanguageTab;
