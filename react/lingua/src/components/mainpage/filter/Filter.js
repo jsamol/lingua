@@ -9,7 +9,7 @@ import "../../../styles.css";
 class Filter extends Component {
     render() {
         return (
-            <div className="height__100pc flex_col">
+            <div className="height__100pc flex-col">
                 <h2 className="center-text">Filter</h2>
                 <Panel className="flex__1">
                     <Panel.Body className="padding__0">

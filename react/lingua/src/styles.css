@@ -33,7 +33,7 @@
     justify-content: flex-end;
 }
 
-.flex_col {
+.flex-col {
     display: flex;
     flex-direction: column;
 }
