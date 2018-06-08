@@ -6,6 +6,10 @@
     padding: 0 !important;
 }
 
+.padding__10 {
+    padding: 10px !important;
+}
+
 .bold-text {
     font-weight: bold;
 }
@@ -18,6 +22,15 @@
     object-fit: cover;
     width: 4em !important;
     height: 4em !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex__justify-right {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .flex_col {
