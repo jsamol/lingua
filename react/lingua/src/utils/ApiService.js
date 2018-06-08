@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { BASE_URL } from "./config/ApiConfig";
 import { setUser } from "../actions/UserActions";
-import { updateLanguages } from "../actions/LanguagesActions";
+import { addLanguages } from "../actions/LanguagesActions";
 
 export const fetchUserData = userId => {
     return (dispatch => {
@@ -25,7 +25,7 @@ export const fetchAvailableLanguages = userLanguages => {
                 const languages = response.data.filter((language) => {
                     return userLanguages.includes(language.id)
                 });
-                dispatch(updateLanguages(languages));
+                dispatch(addLanguages(languages));
             })
             .catch(error => {
                 console.log(error);

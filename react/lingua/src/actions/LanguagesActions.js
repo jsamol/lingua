@@ -1,11 +1,11 @@
-export const UPDATE_LEARNING_LANGUAGES = "UPDATE_LEARNING_LANGUAGES";
+export const ADD_LEARNING_LANGUAGES = "ADD_LEARNING_LANGUAGES";
 export const DELETE_LANGUAGE = "DELETE_LANGUAGE";
 
 export const TOGGLE_LANGUAGE_FILTER = "TOGGLE_LANGUAGE_FILTER";
 
-export const updateLanguages = languages => {
+export const addLanguages = languages => {
     return({
-        type: UPDATE_LEARNING_LANGUAGES,
+        type: ADD_LEARNING_LANGUAGES,
         languages
     });
 };

@@ -1,8 +1,8 @@
-import {DELETE_LANGUAGE, TOGGLE_LANGUAGE_FILTER, UPDATE_LEARNING_LANGUAGES} from "../actions/LanguagesActions";
+import {DELETE_LANGUAGE, TOGGLE_LANGUAGE_FILTER, ADD_LEARNING_LANGUAGES} from "../actions/LanguagesActions";
 
 export const languages = (state = [], action) => {
     switch (action.type) {
-        case UPDATE_LEARNING_LANGUAGES:
+        case ADD_LEARNING_LANGUAGES:
             return([
                 ...state,
                 ...action.languages
