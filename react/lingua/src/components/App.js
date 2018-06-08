@@ -10,6 +10,8 @@ import MainPage from './mainpage/MainPage';
 class App extends Component {
     componentWillMount() {
         this.props.setUser(DEFAULT_USER_ID);
+        this.props.getLanguages();
+        this.props.getCourses();
     }
 
     render() {
@@ -24,7 +26,9 @@ class App extends Component {
 }
 
 App.propTypes = {
-    setUser: PropTypes.func.isRequired
+    setUser: PropTypes.func.isRequired,
+    getLanguages: PropTypes.func.isRequired,
+    getCourses: PropTypes.func.isRequired
 };
 
 export default App;

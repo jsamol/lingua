@@ -1,7 +1,7 @@
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 
 import App from '../components/App';
-import { fetchUserData } from '../utils/ApiService';
+import {fetchCourses, fetchLanguages, fetchUserData} from '../utils/ApiService';
 
 const mapStateToProps = state => {
     return {};
@@ -11,6 +11,12 @@ const mapDispatchToProps = dispatch => {
     return ({
         setUser: id => {
             dispatch(fetchUserData(id));
+        },
+        getLanguages: () => {
+            dispatch(fetchLanguages());
+        },
+        getCourses: () => {
+            dispatch(fetchCourses());
         }
     });
 };

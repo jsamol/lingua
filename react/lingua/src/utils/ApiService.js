@@ -1,8 +1,9 @@
 import axios from 'axios';
 
-import { BASE_URL } from "./config/ApiConfig";
-import { setUser } from "../actions/UserActions";
-import { addLanguages } from "../actions/LanguagesActions";
+import {BASE_URL} from "./config/ApiConfig";
+import {setUser} from "../actions/UserActions";
+import {addLanguages} from "../actions/LanguagesActions";
+import {addCourses} from "../actions/CoursesActions";
 
 export const fetchUserData = userId => {
     return (dispatch => {
@@ -10,7 +11,6 @@ export const fetchUserData = userId => {
             .then(response => {
                 const user = response.data;
                 dispatch(setUser(user));
-                dispatch(fetchAvailableLanguages(user.languages));
             })
             .catch(error => {
                 console.log(error);
@@ -18,17 +18,28 @@ export const fetchUserData = userId => {
     });
 };
 
-export const fetchAvailableLanguages = userLanguages => {
+export const fetchLanguages = () => {
     return (dispatch => {
         axios.get(`${BASE_URL}/languages`)
             .then(response => {
-                const languages = response.data.filter((language) => {
-                    return userLanguages.includes(language.id)
-                });
+                const languages = response.data;
                 dispatch(addLanguages(languages));
             })
             .catch(error => {
                 console.log(error);
             })
     });
+};
+
+export const fetchCourses = () => {
+    return (dispatch => {
+        axios.get(`${BASE_URL}/courses`)
+            .then(response => {
+                const courses = response.data;
+                dispatch(addCourses(courses));
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    })
 };

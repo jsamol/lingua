@@ -32,7 +32,7 @@ class LanguageTab extends Component {
         return(
             <ListGroup>
                 {this.props.languages.map(language => {
-                    console.log(this.props.filterLanguages, language.id, this.props.filterLanguages.includes(language.id));
+
                     return (
                         <ListGroupItem onClick={this.onLanguageClick}
                                        id={language.id}

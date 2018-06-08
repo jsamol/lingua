@@ -5,7 +5,11 @@ import {toggleLanguageFilter} from "../../../../actions/LanguagesActions";
 
 const mapStateToProps = state => {
     return ({
-        languages: state.languages,
+        languages: state.languages.filter(language => {
+            if (state.user && state.user.languages.includes(language.id)) {
+                return language;
+            }
+        }),
         filterLanguages: state.filterLanguages
     });
 };
