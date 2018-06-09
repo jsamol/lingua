@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import {DEFAULT_USER_ID} from '../utils/config/DefaultConfig';
@@ -16,7 +16,7 @@ function NotImplemented(props) {
             <div className="alert-container">
                 <Alert bsStyle="danger">
                     <h4>Page not implemented!</h4>
-                    <a href="/"><Button bsStyle="danger">Go back</Button></a>
+                    <Link to="/"><Button bsStyle="danger">Go back</Button></Link>
                 </Alert>
             </div>
         </div>

@@ -4,16 +4,22 @@ import PropTypes from 'prop-types';
 
 import "./styles.css";
 import "./Header.css";
+import {Link} from "react-router-dom";
+import {LinkContainer} from "react-router-bootstrap";
 
 function NavLinks(props) {
     return (
         <Nav>
-            <NavItem className="nav-item" href="/courses">
-                Courses
-            </NavItem>
-            <NavItem className="nav-item" href="/natives">
-                Talk with native
-            </NavItem>
+            <LinkContainer to="/courses">
+                <NavItem className="nav-item">
+                    Courses
+                </NavItem>
+            </LinkContainer>
+            <LinkContainer to="/natives">
+                <NavItem className="nav-item">
+                    Talk with native
+                </NavItem>
+            </LinkContainer>
         </Nav>
     );
 }
@@ -44,9 +50,9 @@ class Header extends Component {
                     <NavLinks/>
                     <NavSearch/>
                 </Navbar>
-                <a href="/settings" className="user-img-container">
+                <Link to="/settings" className="user-img-container">
                     <Image className="circle-img user-img" src={this.props.userAvatarSrc} circle />
-                </a>
+                </Link>
             </div>
         );
     }
