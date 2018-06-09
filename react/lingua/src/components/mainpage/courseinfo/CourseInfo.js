@@ -22,7 +22,9 @@ function CourseInfoHeader(props) {
                     }
                 </div>
             </div>
-            <Button bsStyle="primary" className="flex__1">{props.isOpen ? "Continue" : "Start"}</Button>
+            <a href={"/courses/" + props.id} className="flex__1">
+                <Button bsStyle="primary">{props.isOpen ? "Continue" : "Start"}</Button>
+            </a>
         </div>
     );
 }
@@ -50,7 +52,8 @@ class CourseInfo extends Component {
                         <Fade in={this.props.selectedCourse !== undefined}>
                             {this.props.selectedCourse
                                 ? <div>
-                                    <CourseInfoHeader name={this.props.selectedCourse.name}
+                                    <CourseInfoHeader id={this.props.selectedCourse.id}
+                                                      name={this.props.selectedCourse.name}
                                                       img={this.props.selectedCourse.img}
                                                       isOpen={this.props.selectedCourse.isOpen}
                                                       isFree={this.props.selectedCourse.isFree}
