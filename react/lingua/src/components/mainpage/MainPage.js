@@ -6,7 +6,7 @@ import '../../styles.css';
 import Header from '../../containers/shared/HeaderContainer';
 import Filter from './filter/Filter';
 import Courses from '../../containers/mainpage/courses/CoursesContainer';
-import CourseInfo from './courseinfo/CourseInfo';
+import CourseInfo from '../../containers/mainpage/courseinfo/CourseInfoContainer';
 
 class MainPage extends Component {
     render() {
