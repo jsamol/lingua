@@ -26,9 +26,8 @@ class LanguageTab extends Component {
         this.onLanguageClick = this.onLanguageClick.bind(this);
     }
 
-    onLanguageClick(event) {
-        const target = event.target;
-        const id = parseInt(target.id, 10);
+    onLanguageClick(languageId) {
+        const id = parseInt(languageId, 10);
 
         this.props.toggleLanguageFilter(id);
     }
@@ -39,8 +38,7 @@ class LanguageTab extends Component {
                 {this.props.languages.map(language => {
 
                     return (
-                        <ListGroupItem onClick={this.onLanguageClick}
-                                       id={language.id}
+                        <ListGroupItem onClick={() => { this.onLanguageClick(language.id) }}
                                        key={language.id}
                                        active={this.props.filterLanguages.includes(language.id)}>
                             <LanguageItem img={language.img} title={language.name}/>
