@@ -1,33 +1,11 @@
 import React, {Component} from 'react';
-import {Button, Fade, Image, Panel} from "react-bootstrap";
+import {Fade, Panel} from "react-bootstrap";
 import PropTypes from 'prop-types';
+
+import CourseInfoHeader from "../../../containers/mainpage/courseinfo/CourseInfoHeaderContainer";
 
 import "../../shared/styles.css";
 import "./CourseInfo.css";
-
-function CourseInfoHeader(props) {
-    return(
-        <div className="course-header-container">
-            <div className="course-header-info">
-                <Image className="circle-img" src={props.img} circle />
-                <div className="course-header-info-text">
-                    <h5>{props.name}</h5>
-                    {!props.isOpen
-                        ? <p className={props.isFree
-                                        ? "free-price-container selected-course-price-container"
-                                        : "price-container selected-course-price-container"}>
-                            {props.price}
-                          </p>
-                        : <p className="hidden-price-container selected-course-price-container">placeholder</p>
-                    }
-                </div>
-            </div>
-            <a href={"/courses/" + props.id} className="flex__1">
-                <Button bsStyle="primary">{props.isOpen ? "Continue" : "Start"}</Button>
-            </a>
-        </div>
-    );
-}
 
 function SampleExercise(props) {
     return(
