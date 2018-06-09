@@ -20,7 +20,9 @@ const getCourseImg = (state, languageId) => {
 
 const getMappedSelectedCourse = state => {
     const selectedCourse = state.courses.find(course => {
-        return course.id === state.selectedCourseId;
+        return course.id === state.selectedCourseId
+            && (state.filterLanguages.length === 0
+                || state.filterLanguages.includes(course.languageId));
     });
 
     if (selectedCourse) {
