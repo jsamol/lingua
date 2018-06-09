@@ -21,7 +21,6 @@ class AdvancedTab extends Component {
 
     handleSubmit(event) {
         this.props.setAdvancedFilter(this.state);
-        console.log(event);
         event.preventDefault();
     }
 

@@ -12,7 +12,6 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return ({
         setAdvancedFilter: advancedFilter => {
-            console.log(advancedFilter);
             dispatch(setAdvancedFilter(advancedFilter));
         }
     });
