@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Panel, Tab, Tabs} from "react-bootstrap";
 
 import LanguageTab from "../../../containers/mainpage/filter/tabs/LanguageTabContainer";
-import AdvancedTab from "./tabs/AdvancedTab";
+import AdvancedTab from "../../../containers/mainpage/filter/tabs/AdvancedTabContainer";
 
 import "../../../styles.css";
 
