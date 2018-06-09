@@ -76,6 +76,15 @@ class Courses extends Component {
         this.toggleShouldShowLessNewCourses = this.toggleShouldShowLessNewCourses.bind(this);
     }
 
+    static getDerivedStateFromProps(props, state) {
+        if (!props.newCourses.map(course => { return course.id; }).includes(props.selectedCourseId)
+            && !props.openCourses.map(course => { return course.id; }).includes(props.selectedCourseId)) {
+            props.deselectCourse();
+        }
+
+        return null;
+    }
+
     toggleShouldShowLessNewCourses() {
         this.setState(previousState => {
             return {
@@ -128,7 +137,8 @@ Courses.propTypes = {
     ).isRequired,
     openCourses: PropTypes.arrayOf(
         PropTypes.object
-    ).isRequired
+    ).isRequired,
+    deselectCourse: PropTypes.func.isRequired
 };
 
 export default Courses;

@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 
-import {setSelectedCourseId} from "../../../actions/CoursesActions";
+import {removeSelectedCourseId, setSelectedCourseId} from "../../../actions/CoursesActions";
 
 import Courses from "../../../components/mainpage/courses/Courses";
 
@@ -95,8 +95,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return ({
-        selectCourse: courseId => {
-            dispatch(setSelectedCourseId(courseId));
+        deselectCourse: () => {
+            dispatch(removeSelectedCourseId());
         }
     });
 };
