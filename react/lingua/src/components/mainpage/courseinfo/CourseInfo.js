@@ -20,6 +20,10 @@ function SampleExercise(props) {
     );
 }
 
+SampleExercise.propTypes = {
+    exercise: PropTypes.string.isRequired
+};
+
 class CourseInfo extends Component {
     render() {
         return (
@@ -62,7 +66,16 @@ class CourseInfo extends Component {
 }
 
 CourseInfo.propTypes = {
-    selectedCourse: PropTypes.object
+    selectedCourse: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        isFree: PropTypes.bool.isRequired,
+        price: PropTypes.string,
+        description: PropTypes.string,
+        sampleExercise: PropTypes.string,
+        img: PropTypes.string.isRequired,
+        isOpen: PropTypes.bool.isRequired
+    })
 };
 
 export default CourseInfo;

@@ -48,6 +48,20 @@ function NewCourses(props) {
     );
 }
 
+NewCourses.propTypes = {
+    courses: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            img: PropTypes.string.isRequired,
+            shortDescription: PropTypes.string.isRequired,
+            isFree: PropTypes.bool.isRequired,
+            price: PropTypes.string
+        })
+    ).isRequired,
+    showLess: PropTypes.bool.isRequired
+};
+
 function OpenCourses(props) {
     return(
         props.courses.map(course => {
@@ -64,6 +78,17 @@ function OpenCourses(props) {
         })
     );
 }
+
+OpenCourses.propTypes = {
+    courses: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            img: PropTypes.string.isRequired,
+            shortDescription: PropTypes.string.isRequired,
+        })
+    )
+};
 
 class Courses extends Component {
     constructor(props) {
@@ -104,8 +129,7 @@ class Courses extends Component {
                         {areOpenCourses && <h3 className="margin__20">Start a new one...</h3>}
 
                         <Grid fluid>
-                            <NewCourses onClick={this.setActiveCourse}
-                                        courses={this.props.newCourses}
+                            <NewCourses courses={this.props.newCourses}
                                         showLess={this.state.shouldShowLessNewCourses}
                             />
                         </Grid>
@@ -120,8 +144,7 @@ class Courses extends Component {
                         {areOpenCourses && areNewCourses && <h3 className="margin__20">... or continue where you left off</h3>}
 
                         <Grid fluid>
-                            <OpenCourses onClick={this.setActiveCourse}
-                                         courses={this.props.openCourses}
+                            <OpenCourses courses={this.props.openCourses}
                             />
                         </Grid>
                     </Panel.Body>
@@ -133,10 +156,22 @@ class Courses extends Component {
 
 Courses.propTypes = {
     newCourses: PropTypes.arrayOf(
-        PropTypes.object
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            img: PropTypes.string.isRequired,
+            shortDescription: PropTypes.string.isRequired,
+            isFree: PropTypes.bool.isRequired,
+            price: PropTypes.string
+        })
     ).isRequired,
     openCourses: PropTypes.arrayOf(
-        PropTypes.object
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            img: PropTypes.string.isRequired,
+            shortDescription: PropTypes.string.isRequired,
+        })
     ).isRequired,
     deselectCourse: PropTypes.func.isRequired
 };

@@ -14,6 +14,11 @@ function LanguageItem(props) {
     );
 }
 
+LanguageItem.propTypes = {
+    img: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
+};
+
 class LanguageTab extends Component {
     constructor(props) {
         super(props);
@@ -49,7 +54,11 @@ class LanguageTab extends Component {
 
 LanguageTab.propTypes = {
     languages: PropTypes.arrayOf(
-        PropTypes.object
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            img: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired
+        })
     ).isRequired,
     filterLanguages: PropTypes.arrayOf(
         PropTypes.number
