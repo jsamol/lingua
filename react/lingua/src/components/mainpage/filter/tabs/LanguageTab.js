@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Image, ListGroup, ListGroupItem} from "react-bootstrap";
 import PropTypes from "prop-types";
 
-import "../../../../styles.css";
+import "../../../shared/styles.css";
 import "./LanguageTab.css";
 
 function LanguageItem(props) {

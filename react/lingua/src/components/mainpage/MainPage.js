@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import './MainPage.css';
-import '../../styles.css';
+import '../shared/styles.css';
 
 import Header from '../../containers/shared/HeaderContainer';
 import Filter from './filter/Filter';

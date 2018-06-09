@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Col, Collapse, Grid, Panel} from "react-bootstrap";
 import PropTypes from 'prop-types';
 
-import "../../../styles.css";
+import "../../shared/styles.css";
 import "./Courses.css";
 
 import Course from "../../../containers/mainpage/courses/CourseContainer";

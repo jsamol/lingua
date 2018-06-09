@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React, {Component} from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import { DEFAULT_USER_ID } from '../utils/config/DefaultConfig';
+import {DEFAULT_USER_ID} from '../utils/config/DefaultConfig';
 
 import './App.css';
 import MainPage from './mainpage/MainPage';

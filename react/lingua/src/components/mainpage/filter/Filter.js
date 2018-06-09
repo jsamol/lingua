@@ -4,7 +4,7 @@ import {Panel, Tab, Tabs} from "react-bootstrap";
 import LanguageTab from "../../../containers/mainpage/filter/tabs/LanguageTabContainer";
 import AdvancedTab from "../../../containers/mainpage/filter/tabs/AdvancedTabContainer";
 
-import "../../../styles.css";
+import "../../shared/styles.css";
 
 class Filter extends Component {
     render() {

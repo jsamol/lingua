@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Button, Fade, Image, Panel} from "react-bootstrap";
 import PropTypes from 'prop-types';
 
-import "../../../styles.css";
+import "../../shared/styles.css";
 import "./CourseInfo.css";
 
 function CourseInfoHeader(props) {

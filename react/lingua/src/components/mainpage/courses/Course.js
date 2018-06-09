@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Image, Panel} from "react-bootstrap";
 import PropTypes from 'prop-types';
 
-import "../../../styles.css";
+import "../../shared/styles.css";
 import "./Course.css";
 
 class Course extends Component {

@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 
-import {removeSelectedCourseId, setSelectedCourseId} from "../../../actions/CoursesActions";
+import {removeSelectedCourseId} from "../../../actions/CoursesActions";
 
 import Courses from "../../../components/mainpage/courses/Courses";
 
