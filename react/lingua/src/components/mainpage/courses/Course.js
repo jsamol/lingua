@@ -25,8 +25,12 @@ class Course extends Component {
             <Panel onClick={() => this.setActiveCourse(this.props.id)}
                    className={this.props.selectedCourseId === this.props.id ? "course-panel-selected" : "course-panel"}>
                 {this.props.price
-                    ? <p className={this.props.isFree ? "free-price-container" : "price-container"}>{this.props.price}</p>
-                    : <p className="hidden-price-container">placeholder</p>
+                    ? <p className={this.props.isFree
+                                        ? "free-price-container new-course-price-container"
+                                        : "price-container new-course-price-container"}>{
+                        this.props.price}
+                      </p>
+                    : <p className="hidden-price-container new-course-price-container">placeholder</p>
                 }
                 <div className="course-info-container">
                     <Image className="circle-img" src={this.props.img} circle />

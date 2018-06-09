@@ -10,6 +10,10 @@
     padding: 10px !important;
 }
 
+.padding__20 {
+    padding: 20px !important;
+}
+
 .margin__20 {
     margin-bottom: 20px !important;
 }
@@ -57,4 +61,16 @@
 
 .overflow-y__auto {
     overflow-y: auto;
+}
+
+.price-container {
+    color: #b6b6b6;
+}
+
+.free-price-container {
+    color: #368E36;
+}
+
+.hidden-price-container {
+    visibility: hidden;
 }

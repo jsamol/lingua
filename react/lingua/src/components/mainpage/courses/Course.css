@@ -36,22 +36,7 @@
     font-size: smaller;
 }
 
-.hidden-price-container {
-    visibility: hidden;
-}
-
-.price-container {
-    visibility: visible !important;
-    color: #b6b6b6;
-    margin: 0;
-    padding: 2px 2px 0 0;
-    width: 100%;
-    text-align: end;
-}
-
-.free-price-container {
-    visibility: visible !important;
-    color: #368E36;
+.new-course-price-container {
     margin: 0;
     padding: 2px 2px 0 0;
     width: 100%;
