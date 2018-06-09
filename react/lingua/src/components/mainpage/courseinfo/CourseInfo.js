@@ -55,7 +55,7 @@ class CourseInfo extends Component {
                                                       isOpen={this.props.selectedCourse.isOpen}
                                                       isFree={this.props.selectedCourse.isFree}
                                                       price={this.props.selectedCourse.price
-                                                                ? this.props.selectedCourse.price
+                                                                ? "$" + this.props.selectedCourse.price
                                                                 : "FREE"}/>
                                     <p className="course-description">{this.props.selectedCourse.description}</p>
                                     {this.props.selectedCourse.sampleExercise &&

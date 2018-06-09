@@ -77,7 +77,7 @@
       "id": 2,
       "name": "English Course #3",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 0,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -86,7 +86,7 @@
       "id": 3,
       "name": "English Course #4",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 0,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -103,7 +103,7 @@
       "id": 5,
       "name": "English Course #6",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 0,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -112,7 +112,7 @@
       "id": 6,
       "name": "German Course #1",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 1,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -121,7 +121,7 @@
       "id": 7,
       "name": "German Course #2",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 1,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -162,7 +162,7 @@
       "id": 12,
       "name": "Spanish Course #3",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 2,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -179,7 +179,7 @@
       "id": 14,
       "name": "Spanish Course #5",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 2,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -188,7 +188,7 @@
       "id": 15,
       "name": "Spanish Course #6",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 2,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -197,7 +197,7 @@
       "id": 16,
       "name": "Spanish Course #7",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 2,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -222,7 +222,7 @@
       "id": 19,
       "name": "Italian Course #2",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 3,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -239,7 +239,7 @@
       "id": 21,
       "name": "Polish Course #1",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 4,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -256,7 +256,7 @@
       "id": 23,
       "name": "Polish Course #3",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 4,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -265,7 +265,7 @@
       "id": 24,
       "name": "Polish Course #4",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 4,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -282,7 +282,7 @@
       "id": 26,
       "name": "Polish Course #6",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 4,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."
@@ -291,7 +291,7 @@
       "id": 27,
       "name": "Polish Course #7",
       "isFree": false,
-      "price": "$9.99",
+      "price": "9.99",
       "languageId": 4,
       "shortDescription": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos...",
       "description": "Lorem ipsum dolor sit amet, vel convenire splendide no. Dolorum tractatos euripidis ne eam. Cu cum nobis efficiantur, idque facer vocent pri at. Pri ex ridens similique omittantur. At consul nostrud accusamus ius, te mea scripserit appellantur.\n\nEum ex aliquip utroque quaestio, cu nulla tacimates mei. Nam ex discere habemus. Ad mea maiorum recusabo oportere, placerat hendrerit cu has. Ad vim praesent prodesset, cibo honestatis qui at.\n\nFacilis accommodare pro ei. Amet oratio recteque vim ut, elit affert partiendo est te. Sea rebum conceptam definitiones ea. Vis ex possim neglegentur, id sit etiam audiam. Percipit aliquando nam ut.\n\nCum et tale omnes similique. Invidunt persequeris pro ex, omnesque eloquentiam mea eu. Ad nisl possim nec. Eu alia regione fastidii mel, eu stet oratio cotidieque mea. Eos ut etiam suscipit inimicus, illud quaeque propriae cu quo.\n\nMeis eruditi ad sed, erat timeam percipitur duo ad. Pro modus erroribus deseruisse ex, ignota impedit complectitur et vel, mel aliquam blandit vivendum ei. Sea an legere lucilius. Ex corpora sensibus mei, malis copiosae abhorreant et sea. Eirmod volumus expetendis id nam."

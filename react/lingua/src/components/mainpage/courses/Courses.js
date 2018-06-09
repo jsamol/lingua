@@ -21,7 +21,7 @@ function NewCourses(props) {
                                 desc={course.shortDescription}
                                 onClick={props.onClick}
                                 isFree={course.isFree}
-                                price={course.isFree ? "FREE" : course.price}
+                                price={course.isFree ? "FREE" : "$" + course.price}
                         />
                     </Col>
                 );
@@ -37,7 +37,7 @@ function NewCourses(props) {
                                         desc={course.shortDescription}
                                         onClick={props.onClick}
                                         isFree={course.isFree}
-                                        price={course.isFree ? "FREE" : course.price}
+                                        price={course.isFree ? "FREE" : "$" + course.price}
                                 />
                             </Col>
                         );
