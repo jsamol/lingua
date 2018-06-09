@@ -29,10 +29,13 @@
     background-color: #e7e7e7;
 }
 
-.user-img {
+.user-img-container {
     position: fixed;
     right: 50px;
+    z-index: 10;
+}
+
+.user-img {
     width: 5.5em !important;
     height: 5.5em !important;
-    z-index: 10;
 }
