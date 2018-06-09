@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import {Button, Image, Panel} from "react-bootstrap";
+import React, {Component} from 'react';
+import {Button, Fade, Image, Panel} from "react-bootstrap";
 import PropTypes from 'prop-types';
 
 import "../../../styles.css";
@@ -47,24 +47,32 @@ class CourseInfo extends Component {
                 <h2 className="center-text">Course Info</h2>
                 <Panel className="flex__1 overflow-y__auto">
                     <Panel.Body className="height__100pc padding__20">
-                        {this.props.selectedCourse
-                            ? <div>
-                                <CourseInfoHeader name={this.props.selectedCourse.name}
-                                                  img={this.props.selectedCourse.img}
-                                                  isOpen={this.props.selectedCourse.isOpen}
-                                                  isFree={this.props.selectedCourse.isFree}
-                                                  price={this.props.selectedCourse.price
-                                                            ? this.props.selectedCourse.price
-                                                            : "FREE"}/>
-                                <p className="course-description">{this.props.selectedCourse.description}</p>
-                                {this.props.selectedCourse.sampleExercise &&
-                                    <SampleExercise exercise={this.props.selectedCourse.sampleExercise}/>
-                                }
-                              </div>
-                            : <div className="no-selected-course-container">
-                                <p>Select a course to display additional information</p>
-                              </div>
-                        }
+                        <Fade in={this.props.selectedCourse !== undefined}>
+                            {this.props.selectedCourse
+                                ? <div>
+                                    <CourseInfoHeader name={this.props.selectedCourse.name}
+                                                      img={this.props.selectedCourse.img}
+                                                      isOpen={this.props.selectedCourse.isOpen}
+                                                      isFree={this.props.selectedCourse.isFree}
+                                                      price={this.props.selectedCourse.price
+                                                                ? this.props.selectedCourse.price
+                                                                : "FREE"}/>
+                                    <p className="course-description">{this.props.selectedCourse.description}</p>
+                                    {this.props.selectedCourse.sampleExercise &&
+                                        <SampleExercise exercise={this.props.selectedCourse.sampleExercise}/>
+                                    }
+                                  </div>
+                                : <div/>
+                            }
+                        </Fade>
+                        <Fade in={this.props.selectedCourse === undefined}>
+                            {!this.props.selectedCourse
+                                ? <div className="no-selected-course-container">
+                                    <p>Select a course to display additional information</p>
+                                  </div>
+                                : <div/>
+                            }
+                        </Fade>
                     </Panel.Body>
                 </Panel>
             </div>
