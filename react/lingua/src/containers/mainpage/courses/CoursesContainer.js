@@ -11,9 +11,7 @@ const getCourseWithImg = (state, filter) => {
 
     if (state.filterLanguages.length > 0) {
         filteredCourses = filteredCourses.filter(course => {
-            if (state.filterLanguages.includes(course.languageId)) {
-                return course;
-            }
+            return state.filterLanguages.includes(course.languageId);
         });
     }
 

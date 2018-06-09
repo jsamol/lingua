@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import {Col, Collapse, Grid, Image, Panel} from "react-bootstrap";
+import React, {Component} from 'react';
+import {Col, Collapse, Grid, Panel} from "react-bootstrap";
 import PropTypes from 'prop-types';
 
 import "../../../styles.css";

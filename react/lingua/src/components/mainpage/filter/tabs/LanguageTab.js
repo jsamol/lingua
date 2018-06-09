@@ -23,7 +23,7 @@ class LanguageTab extends Component {
 
     onLanguageClick(event) {
         const target = event.target;
-        const id = parseInt(target.id);
+        const id = parseInt(target.id, 10);
 
         this.props.toggleLanguageFilter(id);
     }
