@@ -6,6 +6,22 @@ import {DEFAULT_USER_ID} from '../utils/config/DefaultConfig';
 
 import './App.css';
 import MainPage from './mainpage/MainPage';
+import Header from "../containers/shared/HeaderContainer";
+import {Alert, Button} from "react-bootstrap";
+
+function NotImplemented(props) {
+    return(
+        <div>
+            <Header/>
+            <div className="alert-container">
+                <Alert bsStyle="danger">
+                    <h4>Page not implemented!</h4>
+                    <a href="/"><Button bsStyle="danger">Go back</Button></a>
+                </Alert>
+            </div>
+        </div>
+    );
+}
 
 class App extends Component {
     constructor(props) {
@@ -27,6 +43,7 @@ class App extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route exact path="/" component={MainPage}/>
+                    <Route component={NotImplemented} />
                 </Switch>
             </BrowserRouter>
         );
