@@ -45,3 +45,7 @@
     font-size: small;
     margin: 20px 0;
 }
+
+.sample-exercise {
+    white-space: pre-line;
+}

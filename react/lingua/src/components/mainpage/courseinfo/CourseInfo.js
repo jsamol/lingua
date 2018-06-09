@@ -33,7 +33,7 @@ function SampleExercise(props) {
             <h4>Sample exercise</h4>
             <Panel>
                 <Panel.Body>
-                    <p>props.exercise</p>
+                    <p className="sample-exercise">{props.exercise}</p>
                 </Panel.Body>
             </Panel>
         </div>
