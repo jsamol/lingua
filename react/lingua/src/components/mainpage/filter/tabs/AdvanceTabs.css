@@ -22,3 +22,12 @@
     width: 50%;
     margin: 0 1px;
 }
+
+.checkbox-centered-content label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-centered-content label > input {
+    margin: 0;
+}

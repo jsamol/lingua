@@ -66,7 +66,7 @@ class AdvancedTab extends Component {
                         <p className="inline-form-member__1">$</p>
 
                         <Checkbox checked={this.state.freeOnly}
-                                  className="inline-form-member__6"
+                                  className="inline-form-member__6 checkbox-centered-content"
                                   onChange={this.handleFormChange}
                                   name="freeOnly">
                             Free only
