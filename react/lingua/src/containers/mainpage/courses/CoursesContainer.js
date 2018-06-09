@@ -1,5 +1,7 @@
 import {connect} from 'react-redux';
 
+import {setSelectedCourseId} from "../../../actions/CoursesActions";
+
 import Courses from "../../../components/mainpage/courses/Courses";
 
 const getCourseWithImg = (state, filter) => {
@@ -38,11 +40,16 @@ const mapStateToProps = state => {
                 return course;
             }
         }),
+        selectedCourseId: state.selectedCourseId
     });
 };
 
 const mapDispatchToProps = dispatch => {
-    return ({});
+    return ({
+        selectCourse: courseId => {
+            dispatch(setSelectedCourseId(courseId));
+        }
+    });
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Courses);

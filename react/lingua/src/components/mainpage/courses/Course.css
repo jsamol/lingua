@@ -1,0 +1,59 @@
+.course-panel {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.course-panel-selected {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #428ccb;
+}
+
+.course-panel:hover {
+    background-color: #f5f5f5;
+}
+
+.course-info-container {
+    display: flex;
+    padding: 1px 15px 15px 15px;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.course-info-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.course-info-text h5 {
+    margin-top: 0;
+}
+
+.course-info-text p {
+    font-size: smaller;
+}
+
+.hidden-price-container {
+    visibility: hidden;
+}
+
+.price-container {
+    visibility: visible !important;
+    color: #b6b6b6;
+    margin: 0;
+    padding: 2px 2px 0 0;
+    width: 100%;
+    text-align: end;
+}
+
+.free-price-container {
+    visibility: visible !important;
+    color: #368E36;
+    margin: 0;
+    padding: 2px 2px 0 0;
+    width: 100%;
+    text-align: end;
+}

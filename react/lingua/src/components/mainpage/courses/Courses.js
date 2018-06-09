@@ -5,23 +5,7 @@ import PropTypes from 'prop-types';
 import "../../../styles.css";
 import "./Courses.css";
 
-function Course(props) {
-    return(
-        <Panel className="flex-col">
-            {props.price
-                ? <p className={props.isFree ? "free-price-container" : "price-container"}>{props.price}</p>
-                : <p className="hidden-price-container">placeholder</p>
-            }
-            <div className="course-panel">
-                <Image className="circle-img course-panel-element" src={props.img} circle />
-                <div className="course-info-container">
-                    <h5>{props.name}</h5>
-                    <p>{props.desc}</p>
-                </div>
-            </div>
-        </Panel>
-    );
-}
+import Course from "../../../containers/mainpage/courses/CourseContainer";
 
 function NewCourses(props) {
     const alwaysVisibleCourses = props.courses.slice(0, 3);
@@ -35,6 +19,7 @@ function NewCourses(props) {
                                 name={course.name}
                                 img={course.img}
                                 desc={course.shortDescription}
+                                onClick={props.onClick}
                                 isFree={course.isFree}
                                 price={course.isFree ? "FREE" : course.price}
                         />
@@ -50,6 +35,7 @@ function NewCourses(props) {
                                         name={course.name}
                                         img={course.img}
                                         desc={course.shortDescription}
+                                        onClick={props.onClick}
                                         isFree={course.isFree}
                                         price={course.isFree ? "FREE" : course.price}
                                 />
@@ -71,6 +57,7 @@ function OpenCourses(props) {
                             name={course.name}
                             img={course.img}
                             desc={course.shortDescription}
+                            onClick={props.onClick}
                     />
                 </Col>
             )
@@ -108,7 +95,10 @@ class Courses extends Component {
                         {areOpenCourses && <h3 className="margin__20">Start a new one...</h3>}
 
                         <Grid fluid>
-                            <NewCourses courses={this.props.newCourses} showLess={this.state.shouldShowLessNewCourses}/>
+                            <NewCourses onClick={this.setActiveCourse}
+                                        courses={this.props.newCourses}
+                                        showLess={this.state.shouldShowLessNewCourses}
+                            />
                         </Grid>
 
                         {this.props.newCourses.length > 3 &&
@@ -121,7 +111,9 @@ class Courses extends Component {
                         {areOpenCourses && areNewCourses && <h3 className="margin__20">... or continue where you left off</h3>}
 
                         <Grid fluid>
-                            <OpenCourses courses={this.props.openCourses}/>
+                            <OpenCourses onClick={this.setActiveCourse}
+                                         courses={this.props.openCourses}
+                            />
                         </Grid>
                     </Panel.Body>
                 </Panel>
