@@ -8,10 +8,18 @@ import './App.css';
 import MainPage from './mainpage/MainPage';
 
 class App extends Component {
-    componentWillMount() {
-        this.props.setUser(DEFAULT_USER_ID);
-        this.props.getLanguages();
-        this.props.getCourses();
+    constructor(props) {
+        super(props);
+
+        this.state = {};
+    }
+
+    static getDerivedStateFromProps(props, state) {
+        props.setUser(DEFAULT_USER_ID);
+        props.getLanguages();
+        props.getCourses();
+
+        return null;
     }
 
     render() {
