@@ -14,7 +14,7 @@ function NewCourses(props) {
         <div>
             {alwaysVisibleCourses.map(course => {
                 return(
-                    <Col key={course.id} md={4}>
+                    <Col key={course.id} sm={12} md={6} lg={4}>
                         <Course id={course.id}
                                 name={course.name}
                                 img={course.img}
@@ -30,7 +30,7 @@ function NewCourses(props) {
                 <div>
                     {hiddenCourses.map(course => {
                         return(
-                            <Col key={course.id} md={4}>
+                            <Col key={course.id} sm={12} md={6} lg={4}>
                                 <Course id={course.id}
                                         name={course.name}
                                         img={course.img}
@@ -52,7 +52,7 @@ function OpenCourses(props) {
     return(
         props.courses.map(course => {
             return(
-                <Col key={course.id} md={4}>
+                <Col key={course.id} sm={12} md={6} lg={4}>
                     <Course id={course.id}
                             name={course.name}
                             img={course.img}
