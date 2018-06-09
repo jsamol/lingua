@@ -25,11 +25,15 @@
 
 .more-less-button {
     cursor: pointer;
-    color: #0275d8;
+    color: #337ab7;
     width: 100%;
     text-align: end;
     padding: 0 30px;
     margin: 0;
+}
+
+.more-less-button:hover {
+    color: #23527c;
 }
 
 .hidden-price-container {
