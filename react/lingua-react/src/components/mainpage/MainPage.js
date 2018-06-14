@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import './MainPage.css';
 import '../shared/styles.css';
 
-import Header from '../../containers/shared/HeaderContainer';
+import AppContent from '../shared/appcontent/AppContent';
 import Filter from './filter/Filter';
 import Courses from '../../containers/mainpage/courses/CoursesContainer';
 import CourseInfo from '../../containers/mainpage/courseinfo/CourseInfoContainer';
@@ -11,8 +11,7 @@ import CourseInfo from '../../containers/mainpage/courseinfo/CourseInfoContainer
 class MainPage extends Component {
     render() {
         return (
-            <div>
-                <Header/>
+            <AppContent>
                 <div className="main-content">
                     <div className="main-content-col main-content-col-md-2p5">
                         <Filter/>
@@ -24,7 +23,7 @@ class MainPage extends Component {
                         <CourseInfo/>
                     </div>
                 </div>
-            </div>
+            </AppContent>
         );
     }
 }

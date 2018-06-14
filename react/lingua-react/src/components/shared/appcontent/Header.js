@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, Navbar, Nav, NavItem, FormGroup, FormControl, Image } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-import "./styles.css";
+import "../styles.css";
 import "./Header.css";
 import {Link} from "react-router-dom";
 import {LinkContainer} from "react-router-bootstrap";
