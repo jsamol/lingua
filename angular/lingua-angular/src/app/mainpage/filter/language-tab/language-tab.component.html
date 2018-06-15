@@ -1,3 +1,10 @@
-<p>
-  language-tab works!
-</p>
+<div class="list-group">
+  <a *ngFor="let language of languages"
+     href="#"
+     (click)="toggleSelectedLanguage(language.id); false"
+     class="list-group-item list-group-item-action"
+     [class.active]="selectedLanguages.includes(language.id)">
+    <img class="rounded-circle circle-img lang-img" src="{{ language.img }}" />
+    <h5 class="lang-name">{{ language.name }}</h5>
+  </a>
+</div>
