@@ -1,6 +1,21 @@
 <div class="height__100pc flex-col">
   <h3 class="center-text">Filter</h3>
   <div class="card flex__1 overflow-y__auto">
-
+    <div class="card-body padding__0">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link"
+             href="#"
+             (click)="setSelectedTab(LANGUAGE_TAB); false"
+             [class.active]="selectedTab === LANGUAGE_TAB">Languages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             href="#"
+             (click)="setSelectedTab(ADVANCED_TAB); false"
+             [class.active]="selectedTab === ADVANCED_TAB">Advanced</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
