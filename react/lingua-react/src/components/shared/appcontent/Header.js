@@ -29,7 +29,7 @@ function NavSearch(props) {
         <Navbar.Collapse>
             <Navbar.Form pullRight>
                 <FormGroup>
-                    <FormControl type="text" placeholder="Search"/>
+                    <FormControl type="search" placeholder="Search" aria-label="Search"/>
                 </FormGroup>{' '}
                 <Button type="submit">Submit</Button>
             </Navbar.Form>
