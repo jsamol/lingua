@@ -4,6 +4,7 @@ import {Observable} from "rxjs/internal/Observable";
 
 import {User} from "../data/user";
 import {Language} from "../data/language";
+import {Course} from "../data/course";
 
 @Injectable({
   providedIn: 'root'
@@ -27,4 +28,9 @@ export class ApiService {
   getLanguages(): Observable<Language[]> {
     return this.http.get<Language[]>(`${this.BASE_URL}/languages`);
   }
+
+  getCourses(): Observable<Course[]> {
+    return this.http.get<Course[]>(`${this.BASE_URL}/courses`);
+  }
+
 }
