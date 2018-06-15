@@ -1,0 +1,28 @@
+.main-content {
+  display: flex;
+  padding: 20px;
+  height: 100%;
+  align-items: stretch;
+}
+
+.main-content-col {
+  display: flex;
+  padding: 0 15px;
+  flex-direction: column;
+}
+
+.main-content-col-md-2p5 {
+  width: 20.83%;
+}
+
+.main-content-col-md-3p5 {
+  width: 29.16%;
+}
+
+.main-content-col-md-4 {
+  width: 33.33%;
+}
+
+.main-content-col-md-6 {
+  width: 50%;
+}
