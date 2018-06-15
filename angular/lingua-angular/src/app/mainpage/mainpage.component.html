@@ -3,7 +3,7 @@
     <app-filter [languages]="userLanguages"></app-filter>
   </div>
   <div class="main-content-col main-content-col-md-6 padding__0">
-    <app-courses></app-courses>
+    <app-courses [newCourses]="getNewCourses()" [openCourses]="getOpenCourses()"></app-courses>
   </div>
   <div class="main-content-col main-content-col-md-3p5">
     <app-course-info></app-course-info>

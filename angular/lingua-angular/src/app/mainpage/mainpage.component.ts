@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ApiService} from "../api.service";
 import {User} from "../../data/user";
 import {Language} from "../../data/language";
+import {Course} from "../../data/course";
 
 @Component({
   selector: 'app-mainpage',
@@ -10,7 +11,8 @@ import {Language} from "../../data/language";
 })
 export class MainpageComponent implements OnInit {
   user: User;
-  userLanguages: Language[];
+  userLanguages: Language[] = [];
+  courses: Course[] = [];
 
   constructor(private apiService: ApiService) { }
 
@@ -29,5 +31,27 @@ export class MainpageComponent implements OnInit {
             });
           });
       });
+    this.apiService.getCourses()
+      .subscribe(courses => {
+        this.courses = courses;
+      });
+  }
+
+  getNewCourses(): Course[] {
+    return this.courses.filter(course => {
+      if (this.user) {
+        return !this.user.courses.includes(course.id);
+      }
+      return false;
+    })
+  }
+
+  getOpenCourses(): Course[] {
+    return this.courses.filter(course => {
+      if (this.user) {
+        return this.user.courses.includes(course.id);
+      }
+      return false;
+    })
   }
 }
