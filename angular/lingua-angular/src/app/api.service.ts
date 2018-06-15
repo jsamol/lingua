@@ -3,6 +3,7 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs/internal/Observable";
 
 import {User} from "../data/user";
+import {Language} from "../data/language";
 
 @Injectable({
   providedIn: 'root'
@@ -21,5 +22,9 @@ export class ApiService {
 
   getUserData(): Observable<User> {
     return this.http.get<User>(`${this.BASE_URL}/users/${this.userId}`);
+  }
+
+  getLanguages(): Observable<Language[]> {
+    return this.http.get<Language[]>(`${this.BASE_URL}/languages`);
   }
 }
