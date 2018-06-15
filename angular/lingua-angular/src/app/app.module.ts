@@ -9,6 +9,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { FilterComponent } from './mainpage/filter/filter.component';
 import { CoursesComponent } from './mainpage/courses/courses.component';
 import { CourseInfoComponent } from './mainpage/course-info/course-info.component';
+import { LanguageTabComponent } from './mainpage/filter/language-tab/language-tab.component';
+import { AdvancedTabComponent } from './mainpage/filter/advanced-tab/advanced-tab.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CourseInfoComponent } from './mainpage/course-info/course-info.componen
     MainpageComponent,
     FilterComponent,
     CoursesComponent,
-    CourseInfoComponent
+    CourseInfoComponent,
+    LanguageTabComponent,
+    AdvancedTabComponent
   ],
   imports: [
     BrowserModule,

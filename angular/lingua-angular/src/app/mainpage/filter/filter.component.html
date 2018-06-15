@@ -16,6 +16,12 @@
              [class.active]="selectedTab === ADVANCED_TAB">Advanced</a>
         </li>
       </ul>
+      <div *ngIf="selectedTab === LANGUAGE_TAB">
+        <app-language-tab></app-language-tab>
+      </div>
+      <div *ngIf="selectedTab === ADVANCED_TAB">
+        <app-advanced-tab></app-advanced-tab>
+      </div>
     </div>
   </div>
 </div>
