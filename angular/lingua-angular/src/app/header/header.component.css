@@ -12,7 +12,7 @@
 }
 
 .navbar {
-  padding: 0;
+  padding: 0 5rem 0 0;
 }
 
 .navbar-brand {
@@ -48,6 +48,6 @@
 }
 
 .user-img {
-  width: 5.5em !important;
-  height: 5.5em !important;
+  width: 4.5em !important;
+  height: 4.5em !important;
 }
