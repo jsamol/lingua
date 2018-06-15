@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+.margin__0 {
+  margin: 0 !important;
+}
+
+.padding__0 {
+  padding: 0 !important;
+}
+
+.padding__10 {
+  padding: 10px !important;
+}
+
+.padding__20 {
+  padding: 20px !important;
+}
+
+.margin__20 {
+  margin-bottom: 20px !important;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.circle-img {
+  object-fit: cover;
+  width: 4em !important;
+  height: 4em !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex__justify-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex__1 {
+  flex: 1;
+}
+
+.height__100pc {
+  height: 100%;
+}
+
+.overflow-y__auto {
+  overflow-y: auto;
+}
+
+.price-container {
+  color: #b6b6b6;
+}
+
+.free-price-container {
+  color: #368E36;
+}
+
+.hidden-price-container {
+  visibility: hidden;
+}
