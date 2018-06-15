@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Language} from "../../../../data/language";
-import {ApiService} from "../../../api.service";
 
 @Component({
   selector: 'app-language-tab',
@@ -8,25 +7,12 @@ import {ApiService} from "../../../api.service";
   styleUrls: ['./language-tab.component.css']
 })
 export class LanguageTabComponent implements OnInit {
-  languages: Language[] = [];
+  @Input() languages: Language[];
   selectedLanguages: number[] = [];
 
-  constructor(private apiService: ApiService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.getCurrentLanguages();
-  }
-
-  getCurrentLanguages() {
-    this.apiService.getUserData()
-      .subscribe(user => {
-        this.apiService.getLanguages()
-          .subscribe(languages => {
-            this.languages = languages.filter(language => {
-              return user.languages.includes(language.id);
-            });
-          });
-      });
   }
 
   toggleSelectedLanguage(languageId: number) {

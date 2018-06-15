@@ -17,7 +17,7 @@
         </li>
       </ul>
       <div *ngIf="selectedTab === LANGUAGE_TAB">
-        <app-language-tab></app-language-tab>
+        <app-language-tab [languages]="languages"></app-language-tab>
       </div>
       <div *ngIf="selectedTab === ADVANCED_TAB">
         <app-advanced-tab></app-advanced-tab>
