@@ -1,0 +1,33 @@
+.inline-form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.inline-form-member__1 {
+  display: inline-flex;
+  width: 8.33%;
+  margin: 0 1px;
+}
+
+.inline-form-member__2p5 {
+  display: inline-flex;
+  width: 20.83%;
+  margin: 0 1px;
+}
+
+.inline-form-member__6 {
+  display: inline-flex;
+  width: 50%;
+  margin: 0 1px;
+}
+
+.checkbox-centered-content label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-centered-content label > input {
+  margin: 0;
+}
