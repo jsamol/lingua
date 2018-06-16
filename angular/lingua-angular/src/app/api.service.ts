@@ -33,4 +33,11 @@ export class ApiService {
     return this.http.get<Course[]>(`${this.BASE_URL}/courses`);
   }
 
+  startNewCourse(courseId: number) {
+    this.getUserData().subscribe(user => {
+      user.courses.push(courseId);
+      this.http.put(`${this.BASE_URL}/users/${this.userId}`, user).subscribe();
+    });
+  }
+
 }

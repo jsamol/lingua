@@ -45,7 +45,6 @@ export const fetchCourses = () => {
 };
 
 export const startNewCourse = (user, courseId) => {
-    console.log(user);
     user.courses.push(courseId);
     axios.put(`${BASE_URL}/users/${user.id}`, user);
 };

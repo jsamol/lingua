@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Course} from "../../../../data/course";
+import {ApiService} from "../../../api.service";
 
 @Component({
   selector: 'app-course-info-header',
@@ -9,16 +10,22 @@ import {Course} from "../../../../data/course";
 export class CourseInfoHeaderComponent implements OnInit {
   @Input() course: Course;
 
-  constructor() { }
+  constructor(private apiService: ApiService) { }
 
   ngOnInit() {
   }
 
-  getPrice() {
+  getPrice(): string {
     return this.course.isFree ? 'FREE' : '$' + this.course.price;
   }
 
-  getButtonText() {
+  handleButtonClick() {
+    if (!this.course.isOpen) {
+      this.apiService.startNewCourse(this.course.id);
+    }
+  }
+
+  getButtonText(): string {
     return this.course.isOpen ? 'Continue' : 'Start';
   }
 }
