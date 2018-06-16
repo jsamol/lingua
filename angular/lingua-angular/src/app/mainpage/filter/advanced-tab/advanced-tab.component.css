@@ -26,8 +26,10 @@
 .checkbox-centered-content label {
   display: flex;
   align-items: center;
+  font-weight: normal;
+  margin: 0 0 0 2px;
 }
 
-.checkbox-centered-content label > input {
+.checkbox-centered-content input {
   margin: 0;
 }

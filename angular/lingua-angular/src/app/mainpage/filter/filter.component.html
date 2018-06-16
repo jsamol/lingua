@@ -1,16 +1,16 @@
-<div class="card-body padding__0">
+<div class="panel-body padding__0">
   <ul class="nav nav-tabs">
-    <li class="nav-item">
+    <li class="nav-item"
+        [class.active]="selectedTab === LANGUAGE_TAB">
       <a class="nav-link"
          href="#"
-         (click)="setSelectedTab(LANGUAGE_TAB); false"
-         [class.active]="selectedTab === LANGUAGE_TAB">Languages</a>
+         (click)="setSelectedTab(LANGUAGE_TAB); false">Languages</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item"
+        [class.active]="selectedTab === ADVANCED_TAB">
       <a class="nav-link"
          href="#"
-         (click)="setSelectedTab(ADVANCED_TAB); false"
-         [class.active]="selectedTab === ADVANCED_TAB">Advanced</a>
+         (click)="setSelectedTab(ADVANCED_TAB); false">Advanced</a>
     </li>
   </ul>
   <div *ngIf="selectedTab === LANGUAGE_TAB">
