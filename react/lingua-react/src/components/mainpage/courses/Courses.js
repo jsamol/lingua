@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Col, Collapse, Grid, Panel} from "react-bootstrap";
+import {Col, Collapse, Grid, Panel, Row} from "react-bootstrap";
 import PropTypes from 'prop-types';
 
 import "../../shared/styles.css";
@@ -129,9 +129,11 @@ class Courses extends Component {
                         {areOpenCourses && <h3 className="margin__20">Start a new one...</h3>}
 
                         <Grid fluid>
-                            <NewCourses courses={this.props.newCourses}
-                                        showLess={this.state.shouldShowLessNewCourses}
-                            />
+                            <Row>
+                                <NewCourses courses={this.props.newCourses}
+                                            showLess={this.state.shouldShowLessNewCourses}
+                                />
+                            </Row>
                         </Grid>
 
                         {this.props.newCourses.length > 3 &&
@@ -144,8 +146,10 @@ class Courses extends Component {
                         {areOpenCourses && areNewCourses && <h3 className="margin__20">... or continue where you left off</h3>}
 
                         <Grid fluid>
-                            <OpenCourses courses={this.props.openCourses}
-                            />
+                            <Row>
+                                <OpenCourses courses={this.props.openCourses}
+                                />
+                            </Row>
                         </Grid>
                     </Panel.Body>
                 </Panel>
