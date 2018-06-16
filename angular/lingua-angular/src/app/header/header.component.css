@@ -11,30 +11,23 @@
   z-index: 100;
 }
 
-.navbar {
-  padding: 0 5rem 0 0;
-}
-
-.navbar-brand {
-  padding: 0.25rem 0 0.25rem 1rem;
-}
-
 .navbar-container {
   display: flex;
   position: fixed;
   left: 50px;
   right: 60px;
   z-index: 1;
+  margin-bottom: 0;
 }
 
 .navbar-container .container {
   margin-left: 0;
-  margin-right: 60px;
+  margin-right: 80px;
   width: 100%;
 }
 
-.nav-item {
-  padding: 0.25rem 0;
+.navbar-brand {
+  font-weight: bold;
 }
 
 .nav-item:hover {
@@ -48,6 +41,6 @@
 }
 
 .user-img {
-  width: 4.5em !important;
-  height: 4.5em !important;
+  width: 5.5em !important;
+  height: 5.5em !important;
 }

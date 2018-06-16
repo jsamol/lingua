@@ -40,8 +40,8 @@ html {
 
 .circle-img {
   object-fit: cover;
-  width: 3.5em !important;
-  height: 3.5em !important;
+  width: 4em !important;
+  height: 4em !important;
 }
 
 .flex {
