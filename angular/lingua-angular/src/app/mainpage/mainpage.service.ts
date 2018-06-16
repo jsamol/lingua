@@ -31,6 +31,9 @@ export class MainpageService {
     } else {
       this.addSelectedLanguage(languageId);
     }
+    if (!this.selectedLanguages.includes(this.activeCourse.languageId)) {
+      this.activeCourse = null;
+    }
   }
 
   isLanguageSelected(languageId: number): boolean {
@@ -57,13 +60,11 @@ export class MainpageService {
   private removeSelectedLanguage(languageId: number) {
     const arrayId = this.selectedLanguages.indexOf(languageId);
     this.selectedLanguages.splice(arrayId, 1);
+
   }
 
   private addSelectedLanguage(languageId: number) {
     this.selectedLanguages.push(languageId);
-    if (this.activeCourse.languageId !== languageId) {
-      this.activeCourse = null;
-    }
   }
 
   private checkAdvancedFilter(course: Course): boolean {
