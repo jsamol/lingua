@@ -29,12 +29,12 @@
   margin-left: 10px;
 }
 
-.course-info-text h5 {
+.course-info-text h6 {
   margin-top: 0;
 }
 
 .course-info-text p {
-  font-size: smaller;
+  font-size: small;
 }
 
 .new-course-price-container {
