@@ -1,11 +1,6 @@
-<div class="height__100pc flex-col">
-  <h3 class="center-text">Courses</h3>
-  <div class="card flex__1 overflow-y__auto">
-    <div class="card-body">
-      <h4 *ngIf="checkIfNewCourses()" class="margin__20">Start a new one...</h4>
-      <app-new-courses [courses]="newCourses"></app-new-courses>
-      <h4 *ngIf="checkIfNewCourses() && checkIfOpenCourses()" class="margin__20">... or continue where you left off</h4>
-      <app-open-courses [courses]="openCourses"></app-open-courses>
-    </div>
-  </div>
+<div class="card-body">
+  <h4 *ngIf="checkIfNewCourses()" class="margin__20">Start a new one...</h4>
+  <app-new-courses [courses]="newCourses"></app-new-courses>
+  <h4 *ngIf="checkIfNewCourses() && checkIfOpenCourses()" class="margin__20">... or continue where you left off</h4>
+  <app-open-courses [courses]="openCourses"></app-open-courses>
 </div>

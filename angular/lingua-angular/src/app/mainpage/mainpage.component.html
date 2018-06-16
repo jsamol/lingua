@@ -1,11 +1,27 @@
 <div class="main-content">
   <div class="main-content-col main-content-col-md-2p5">
-    <app-filter [languages]="userLanguages"></app-filter>
+    <div class="height__100pc flex-col">
+      <h3 class="center-text">Filter</h3>
+      <div class="card flex__1 overflow-y__auto">
+        <app-filter [languages]="userLanguages"></app-filter>
+      </div>
+    </div>
   </div>
   <div class="main-content-col main-content-col-md-6 padding__0">
-    <app-courses [newCourses]="getNewCourses()" [openCourses]="getOpenCourses()"></app-courses>
+    <div class="height__100pc flex-col">
+      <h3 class="center-text">Courses</h3>
+      <div class="card flex__1 overflow-y__auto">
+        <app-courses [newCourses]="getNewCourses()"
+                     [openCourses]="getOpenCourses()"></app-courses>
+      </div>
+    </div>
   </div>
   <div class="main-content-col main-content-col-md-3p5">
-    <app-course-info></app-course-info>
+    <div class="height__100pc flex-col">
+      <h3 class="center-text">Course Info</h3>
+      <div class="card flex__1 overflow-y__auto">
+        <app-course-info></app-course-info>
+      </div>
+    </div>
   </div>
 </div>
