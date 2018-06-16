@@ -16,6 +16,7 @@ import { OpenCoursesComponent } from './mainpage/courses/open-courses/open-cours
 import { CourseComponent } from './mainpage/courses/course/course.component';
 import { CourseInfoHeaderComponent } from './mainpage/course-info/course-info-header/course-info-header.component';
 import { NotImplementedComponent } from './not-implemented/not-implemented.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { NotImplementedComponent } from './not-implemented/not-implemented.compo
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule
   ],

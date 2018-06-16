@@ -1,5 +1,5 @@
 <div class="panel-body height__100pc padding__20">
-  <div *ngIf="isActiveCourse(); else noSelectedCourse">
+  <div [@fadeIn] *ngIf="isActiveCourse(); else noSelectedCourse">
     <app-course-info-header [course]="getActiveCourse()"></app-course-info-header>
     <p class="course-description">{{ getActiveCourse().description }}</p>
     <div *ngIf="getActiveCourse().sampleExercise">
@@ -12,7 +12,7 @@
     </div>
   </div>
   <ng-template #noSelectedCourse>
-    <div class="no-selected-course-container">
+    <div [@fadeIn] class="no-selected-course-container">
       <p>Select a course to display additional information</p>
     </div>
   </ng-template>

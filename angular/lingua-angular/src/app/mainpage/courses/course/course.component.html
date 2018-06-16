@@ -1,4 +1,4 @@
-<div (click)="toggleActiveCourse(course)"
+<div (click)="toggleActiveCourse(course); false"
      class="panel panel-default"
      [class.course-panel]="!isActive()"
      [class.course-panel-selected]="isActive()">
