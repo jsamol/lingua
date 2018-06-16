@@ -26,14 +26,12 @@ function NavLinks(props) {
 
 function NavSearch(props) {
     return (
-        <Navbar.Collapse>
-            <Navbar.Form pullRight>
-                <FormGroup>
-                    <FormControl type="search" placeholder="Search" aria-label="Search"/>
-                </FormGroup>{' '}
-                <Button type="submit">Submit</Button>
-            </Navbar.Form>
-        </Navbar.Collapse>
+        <Navbar.Form pullRight>
+            <FormGroup>
+                <FormControl type="search" placeholder="Search" aria-label="Search"/>
+            </FormGroup>{' '}
+            <Button type="submit">Submit</Button>
+        </Navbar.Form>
     );
 }
 
