@@ -1,4 +1,7 @@
-<div class="card course-panel">
+<div (click)="toggleActiveCourse(course)"
+     class="card"
+     [class.course-panel]="!isActive()"
+     [class.course-panel-selected]="isActive()">
   <app-price-container [isFree]="course.isFree"
                        [price]="getPrice()"
                        [visible]="showPrice"></app-price-container>

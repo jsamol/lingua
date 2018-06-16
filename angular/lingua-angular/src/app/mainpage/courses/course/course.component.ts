@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Course} from "../../../../data/course";
+import {MainpageService} from "../../mainpage.service";
 
 @Component({
   selector: 'app-course',
@@ -10,13 +11,22 @@ export class CourseComponent implements OnInit {
   @Input() course: Course;
   @Input() showPrice = false;
 
-  constructor() { }
+  constructor(private mainpageService: MainpageService) { }
 
   ngOnInit() {
   }
 
   getPrice(): string {
     return this.course.isFree ? "FREE" : "$" + this.course.price;
+  }
+
+  toggleActiveCourse(course: Course) {
+    this.mainpageService.setActiveCourse(this.isActive() ? null : course);
+  }
+
+  isActive(): boolean {
+    const activeCourse = this.mainpageService.getActiveCourse();
+    return activeCourse ? activeCourse.id === this.course.id : false;
   }
 
 }
