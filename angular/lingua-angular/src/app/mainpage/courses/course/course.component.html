@@ -1,0 +1,12 @@
+<div class="card course-panel">
+  <app-price-container [isFree]="course.isFree"
+                       [price]="getPrice()"
+                       [visible]="showPrice"></app-price-container>
+  <div class="course-info-container">
+    <img class="rounded-circle circle-img" src="{{ course.img }}"/>
+    <div class="course-info-text">
+      <h6>{{ course.name }}</h6>
+      <p>{{ course.shortDescription }}</p>
+    </div>
+  </div>
+</div>
