@@ -3,7 +3,8 @@
     <div class="height__100pc flex-col">
       <h3 class="center-text">Filter</h3>
       <div class="card flex__1 overflow-y__auto">
-        <app-filter [languages]="userLanguages"></app-filter>
+        <app-filter class="height__100pc"
+                    [languages]="userLanguages"></app-filter>
       </div>
     </div>
   </div>
@@ -11,7 +12,8 @@
     <div class="height__100pc flex-col">
       <h3 class="center-text">Courses</h3>
       <div class="card flex__1 overflow-y__auto">
-        <app-courses [newCourses]="getNewCourses()"
+        <app-courses class="height__100pc"
+                     [newCourses]="getNewCourses()"
                      [openCourses]="getOpenCourses()"></app-courses>
       </div>
     </div>
@@ -20,7 +22,7 @@
     <div class="height__100pc flex-col">
       <h3 class="center-text">Course Info</h3>
       <div class="card flex__1 overflow-y__auto">
-        <app-course-info></app-course-info>
+        <app-course-info class="height__100pc"></app-course-info>
       </div>
     </div>
   </div>
