@@ -38,20 +38,37 @@ export class MainpageComponent implements OnInit {
   }
 
   getNewCourses(): Course[] {
-    return this.courses.filter(course => {
+    return this.getFilteredCourses(course => {
       if (this.user) {
-        return !this.user.courses.includes(course.id);
+        return !this.user.courses.includes(course.id)
+          && this.userLanguages
+              .map(language => { return language.id })
+              .includes(course.languageId);
       }
       return false;
-    })
+    });
   }
 
   getOpenCourses(): Course[] {
-    return this.courses.filter(course => {
+    return this.getFilteredCourses(course => {
       if (this.user) {
         return this.user.courses.includes(course.id);
       }
       return false;
-    })
+    });
+  }
+
+  private getFilteredCourses(filter: (Course) => boolean): Course[] {
+    return this.courses
+      .filter(filter)
+      .map(course => {
+      const courseLanguage = this.userLanguages.find(language => {
+        return language.id === course.languageId;
+      });
+      if (courseLanguage) {
+        course.img = courseLanguage.img;
+      }
+      return course;
+    });
   }
 }

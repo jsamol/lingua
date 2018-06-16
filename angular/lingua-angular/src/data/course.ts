@@ -6,4 +6,5 @@ export class Course {
   languageId: number;
   shortDescription: string;
   description: string;
+  img: string;
 }
