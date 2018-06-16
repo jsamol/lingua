@@ -36,6 +36,10 @@ export class MainpageService {
     }
   }
 
+  clearSelectedLanguages() {
+    this.selectedLanguages = [];
+  }
+
   isLanguageSelected(languageId: number): boolean {
     return this.selectedLanguages.includes(languageId);
   }

@@ -124,6 +124,12 @@ OpenCourses.propTypes = {
 };
 
 class Courses extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {};
+    }
+
     static getDerivedStateFromProps(props, state) {
         if (!props.newCourses.map(course => { return course.id; }).includes(props.selectedCourseId)
             && !props.openCourses.map(course => { return course.id; }).includes(props.selectedCourseId)) {

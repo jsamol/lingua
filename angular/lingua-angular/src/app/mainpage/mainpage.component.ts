@@ -24,6 +24,9 @@ export class MainpageComponent implements OnInit {
 
   ngOnInit() {
     this.getData();
+    this.mainpageService.setActiveCourse(null);
+    this.mainpageService.setAdvancedFilter(null, null, null, false);
+    this.mainpageService.clearSelectedLanguages();
     this.titleService.setTitle(this.TITLE);
   }
 

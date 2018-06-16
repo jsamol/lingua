@@ -45,7 +45,10 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/" component={MainPage}/>
+                    <Route exact path="/" render={() => {
+                        this.props.resetMainPageState();
+                        return <MainPage/>
+                    }}/>
                     <Route component={NotImplemented} />
                 </Switch>
             </BrowserRouter>
@@ -56,7 +59,8 @@ class App extends Component {
 App.propTypes = {
     setUser: PropTypes.func.isRequired,
     getLanguages: PropTypes.func.isRequired,
-    getCourses: PropTypes.func.isRequired
+    getCourses: PropTypes.func.isRequired,
+    resetMainPageState: PropTypes.func.isRequired
 };
 
 export default App;
