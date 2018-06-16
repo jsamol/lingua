@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Helmet} from 'react-helmet';
 
 import './MainPage.css';
 import '../shared/styles.css';
@@ -12,6 +13,9 @@ class MainPage extends Component {
     render() {
         return (
             <AppContent>
+                <Helmet>
+                    <title>Lingua | Main Page</title>
+                </Helmet>
                 <div className="main-content">
                     <div className="main-content-col main-content-col-md-2p5">
                         <Filter/>

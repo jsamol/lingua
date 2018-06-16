@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-not-implemented',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./not-implemented.component.css']
 })
 export class NotImplementedComponent implements OnInit {
+  private readonly TITLE = 'Lingua | Not implemented';
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle(this.TITLE);
   }
 
 }

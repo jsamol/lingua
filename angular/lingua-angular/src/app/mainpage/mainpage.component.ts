@@ -4,6 +4,7 @@ import {User} from "../../data/user";
 import {Language} from "../../data/language";
 import {Course} from "../../data/course";
 import {MainpageService} from "./mainpage.service";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-mainpage',
@@ -11,15 +12,19 @@ import {MainpageService} from "./mainpage.service";
   styleUrls: ['./mainpage.component.css']
 })
 export class MainpageComponent implements OnInit {
+  private readonly TITLE = 'Lingua | Main Page';
+
   user: User;
   userLanguages: Language[] = [];
   courses: Course[] = [];
 
   constructor(private apiService: ApiService,
-              private mainpageService: MainpageService) { }
+              private mainpageService: MainpageService,
+              private titleService: Title) { }
 
   ngOnInit() {
     this.getData();
+    this.titleService.setTitle(this.TITLE);
   }
 
   getData() {

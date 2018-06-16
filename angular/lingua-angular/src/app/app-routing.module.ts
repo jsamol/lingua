@@ -6,10 +6,10 @@ import {NotImplementedComponent} from "./not-implemented/not-implemented.compone
 
 const routes: Routes = [
   { path: '', component: MainpageComponent },
-  { path: 'courses', component: NotImplementedComponent},
+  { path: 'courses', component: NotImplementedComponent },
   { path: 'natives', component: NotImplementedComponent },
   { path: 'settings', component: NotImplementedComponent },
-  { path: 'courses/:id', component: NotImplementedComponent}
+  { path: 'courses/:id', component: NotImplementedComponent }
 ];
 
 @NgModule({
