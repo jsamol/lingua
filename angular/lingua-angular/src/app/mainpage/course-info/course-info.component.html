@@ -1,0 +1,8 @@
+<div *ngIf="isActiveCourse(); else noSelectedCourse">
+
+</div>
+<ng-template #noSelectedCourse>
+  <div class="no-selected-course-container">
+    <p>Select a course to display additional information</p>
+  </div>
+</ng-template>

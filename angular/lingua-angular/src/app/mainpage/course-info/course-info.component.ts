@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MainpageService} from "../mainpage.service";
 
 @Component({
   selector: 'app-course-info',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseInfoComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private mainpageService: MainpageService) { }
 
   ngOnInit() {
+  }
+
+  isActiveCourse(): boolean {
+    return this.mainpageService.getActiveCourse() !== null
+      && this.mainpageService.getActiveCourse() !== undefined;
+  }
+
+  getActiveCourse() {
+    return this.mainpageService.getActiveCourse();
   }
 
 }

@@ -1,0 +1,20 @@
+.no-selected-course-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.no-selected-course-container p {
+  color: #b6b6b6;
+}
+
+.course-description {
+  white-space: pre-line;
+  font-size: small;
+  margin: 20px 0;
+}
+
+.sample-exercise {
+  white-space: pre-line;
+}
