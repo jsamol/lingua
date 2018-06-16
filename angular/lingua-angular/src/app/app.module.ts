@@ -15,6 +15,7 @@ import { NewCoursesComponent } from './mainpage/courses/new-courses/new-courses.
 import { OpenCoursesComponent } from './mainpage/courses/open-courses/open-courses.component';
 import { CourseComponent } from './mainpage/courses/course/course.component';
 import { CourseInfoHeaderComponent } from './mainpage/course-info/course-info-header/course-info-header.component';
+import { NotImplementedComponent } from './not-implemented/not-implemented.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CourseInfoHeaderComponent } from './mainpage/course-info/course-info-he
     NewCoursesComponent,
     OpenCoursesComponent,
     CourseComponent,
-    CourseInfoHeaderComponent
+    CourseInfoHeaderComponent,
+    NotImplementedComponent
   ],
   imports: [
     BrowserModule,
