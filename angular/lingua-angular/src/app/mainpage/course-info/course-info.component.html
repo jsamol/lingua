@@ -1,8 +1,19 @@
-<div *ngIf="isActiveCourse(); else noSelectedCourse">
-
-</div>
-<ng-template #noSelectedCourse>
-  <div class="no-selected-course-container">
-    <p>Select a course to display additional information</p>
+<div class="card-body height__100pc padding__20">
+  <div *ngIf="isActiveCourse(); else noSelectedCourse">
+    <app-course-info-header [course]="getActiveCourse()"></app-course-info-header>
+    <p class="course-description">{{ getActiveCourse().description }}</p>
+    <div *ngIf="getActiveCourse().sampleExercise">
+      <h5>Sample exercise</h5>
+      <div class="card sample-exercise-container">
+        <div class="card-body">
+          <p class="sample-exercise">{{ getActiveCourse().sampleExercise }}</p>
+        </div>
+      </div>
+    </div>
   </div>
-</ng-template>
+  <ng-template #noSelectedCourse>
+    <div class="no-selected-course-container">
+      <p>Select a course to display additional information</p>
+    </div>
+  </ng-template>
+</div>

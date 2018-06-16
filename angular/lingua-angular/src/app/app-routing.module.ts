@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: '', component: MainpageComponent },
   { path: 'courses', redirectTo: '/', pathMatch: 'full' },
   { path: 'natives', redirectTo: '/', pathMatch: 'full' },
-  { path: 'settings', redirectTo: '/', pathMatch: 'full' }
+  { path: 'settings', redirectTo: '/', pathMatch: 'full' },
+  { path: 'course/:id', redirectTo: '/', pathMatch: 'full'}
 ];
 
 @NgModule({

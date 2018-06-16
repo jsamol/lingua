@@ -1,0 +1,16 @@
+<div class="course-header-container">
+  <div class="course-header-info">
+    <img class="rounded-circle circle-img" src="{{ course.img }}"/>
+    <div class="course-header-info-text">
+      <h6>{{ course.name }}</h6>
+      <p class="selected-course-price-container"
+         [class.free-price-container]="!course.isOpen && course.isFree"
+         [class.price-container]="!course.isOpen && !course.isFree"
+         [class.hidden-price-container]="course.isOpen">{{ getPrice() }}</p>
+    </div>
+  </div>
+  <a routerLink="/courses/{{ course.id }}"
+     class="flex__1">
+    <button type="button" class="btn btn-primary">{{ getButtonText() }}</button>
+  </a>
+</div>
