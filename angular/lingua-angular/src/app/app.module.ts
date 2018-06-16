@@ -14,7 +14,7 @@ import { AdvancedTabComponent } from './mainpage/filter/advanced-tab/advanced-ta
 import { NewCoursesComponent } from './mainpage/courses/new-courses/new-courses.component';
 import { OpenCoursesComponent } from './mainpage/courses/open-courses/open-courses.component';
 import { CourseComponent } from './mainpage/courses/course/course.component';
-import { PriceContainerComponent } from './mainpage/courses/course/price-container/price-container.component';
+import { CourseInfoHeaderComponent } from './mainpage/course-info/course-info-header/course-info-header.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { PriceContainerComponent } from './mainpage/courses/course/price-contain
     NewCoursesComponent,
     OpenCoursesComponent,
     CourseComponent,
-    PriceContainerComponent
+    CourseInfoHeaderComponent
   ],
   imports: [
     BrowserModule,

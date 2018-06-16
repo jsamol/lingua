@@ -2,14 +2,14 @@
   <div class="row">
     <div *ngFor="let course of getVisibleCourses()"
          class="col-sm-12 col-md-6 col-lg-4">
-      <app-course [course]="course" [showPrice]="true"></app-course>
+      <app-course [course]="course"></app-course>
     </div>
   </div>
   <div class="collapse width__100pc" id="more-new-courses">
     <div class="row">
       <div *ngFor="let course of getHiddenCourses()"
            class="col-sm-12 col-md-6 col-lg-4">
-        <app-course [course]="course" [showPrice]="true"></app-course>
+        <app-course [course]="course"></app-course>
       </div>
     </div>
   </div>

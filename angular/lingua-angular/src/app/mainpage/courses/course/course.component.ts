@@ -9,7 +9,6 @@ import {MainpageService} from "../../mainpage.service";
 })
 export class CourseComponent implements OnInit {
   @Input() course: Course;
-  @Input() showPrice = false;
 
   constructor(private mainpageService: MainpageService) { }
 

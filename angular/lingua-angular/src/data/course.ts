@@ -7,4 +7,5 @@ export class Course {
   shortDescription: string;
   description: string;
   img: string;
+  isOpen: boolean;
 }

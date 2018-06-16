@@ -2,9 +2,10 @@
      class="card"
      [class.course-panel]="!isActive()"
      [class.course-panel-selected]="isActive()">
-  <app-price-container [isFree]="course.isFree"
-                       [price]="getPrice()"
-                       [visible]="showPrice"></app-price-container>
+  <p class="new-course-price-container"
+     [class.free-price-container]="!course.isOpen && course.isFree"
+     [class.price-container]="!course.isOpen && !course.isFree"
+     [class.hidden-price-container]="course.isOpen">{{ getPrice() }}</p>
   <div class="course-info-container">
     <img class="rounded-circle circle-img" src="{{ course.img }}"/>
     <div class="course-info-text">

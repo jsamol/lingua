@@ -55,6 +55,9 @@ export class MainpageComponent implements OnInit {
         return this.user.courses.includes(course.id);
       }
       return false;
+    }).map(course => {
+      course.isOpen = true;
+      return course;
     });
   }
 
