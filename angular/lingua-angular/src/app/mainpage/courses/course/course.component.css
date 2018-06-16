@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  margin-bottom: 1.5rem;
 }
 
 .course-panel-selected {
@@ -29,12 +28,12 @@
   margin-left: 10px;
 }
 
-.course-info-text h6 {
+.course-info-text h5 {
   margin-top: 0;
 }
 
 .course-info-text p {
-  font-size: small;
+  font-size: smaller;
 }
 
 .new-course-price-container {

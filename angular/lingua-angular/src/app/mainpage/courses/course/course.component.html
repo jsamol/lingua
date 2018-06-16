@@ -1,5 +1,5 @@
 <div (click)="toggleActiveCourse(course)"
-     class="card"
+     class="panel panel-default"
      [class.course-panel]="!isActive()"
      [class.course-panel-selected]="isActive()">
   <p class="new-course-price-container"
@@ -7,9 +7,9 @@
      [class.price-container]="!course.isOpen && !course.isFree"
      [class.hidden-price-container]="course.isOpen">{{ getPrice() }}</p>
   <div class="course-info-container">
-    <img class="rounded-circle circle-img" src="{{ course.img }}"/>
+    <img class="img-circle circle-img" src="{{ course.img }}"/>
     <div class="course-info-text">
-      <h6>{{ course.name }}</h6>
+      <h5>{{ course.name }}</h5>
       <p>{{ course.shortDescription }}</p>
     </div>
   </div>
