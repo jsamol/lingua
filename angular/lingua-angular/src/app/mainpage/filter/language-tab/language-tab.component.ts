@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Language} from "../../../../data/language";
+import {MainpageService} from "../../mainpage.service";
 
 @Component({
   selector: 'app-language-tab',
@@ -8,19 +9,17 @@ import {Language} from "../../../../data/language";
 })
 export class LanguageTabComponent implements OnInit {
   @Input() languages: Language[];
-  selectedLanguages: number[] = [];
 
-  constructor() { }
+  constructor(private mainpageService: MainpageService) { }
 
   ngOnInit() {
   }
 
   toggleSelectedLanguage(languageId: number) {
-    if (this.selectedLanguages.includes(languageId)) {
-      const arrayId = this.selectedLanguages.indexOf(languageId);
-      this.selectedLanguages.splice(arrayId, 1);
-    } else {
-      this.selectedLanguages.push(languageId);
-    }
+    this.mainpageService.toggleSelectedLanguage(languageId);
+  }
+
+  isSelectedLanguage(languageId: number): boolean {
+    return this.mainpageService.isLanguageSelected(languageId);
   }
 }

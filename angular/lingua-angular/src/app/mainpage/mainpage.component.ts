@@ -3,6 +3,7 @@ import {ApiService} from "../api.service";
 import {User} from "../../data/user";
 import {Language} from "../../data/language";
 import {Course} from "../../data/course";
+import {MainpageService} from "./mainpage.service";
 
 @Component({
   selector: 'app-mainpage',
@@ -14,7 +15,8 @@ export class MainpageComponent implements OnInit {
   userLanguages: Language[] = [];
   courses: Course[] = [];
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService,
+              private mainpageService: MainpageService) { }
 
   ngOnInit() {
     this.getData();
@@ -63,6 +65,9 @@ export class MainpageComponent implements OnInit {
 
   private getFilteredCourses(filter: (Course) => boolean): Course[] {
     return this.courses
+      .filter(course => {
+        return this.mainpageService.shouldCourseBeDisplayed(course);
+      })
       .filter(filter)
       .map(course => {
       const courseLanguage = this.userLanguages.find(language => {
