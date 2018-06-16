@@ -71,6 +71,10 @@ html {
   height: 100%;
 }
 
+.width__100pc {
+  width: 100%;
+}
+
 .overflow-y__auto {
   overflow-y: auto;
 }

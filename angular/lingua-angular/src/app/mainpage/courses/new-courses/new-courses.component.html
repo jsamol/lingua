@@ -1,8 +1,23 @@
 <div class="container-fluid">
   <div class="row">
-    <div *ngFor="let course of courses"
+    <div *ngFor="let course of getVisibleCourses()"
          class="col-sm-12 col-md-6 col-lg-4">
       <app-course [course]="course" [showPrice]="true"></app-course>
     </div>
   </div>
+  <div class="collapse width__100pc" id="more-new-courses">
+    <div class="row">
+      <div *ngFor="let course of getHiddenCourses()"
+           class="col-sm-12 col-md-6 col-lg-4">
+        <app-course [course]="course" [showPrice]="true"></app-course>
+      </div>
+    </div>
+  </div>
 </div>
+<p *ngIf="courses.length > 3"
+   class="more-less-button"
+   data-toggle="collapse"
+   data-target="#more-new-courses"
+   aria-expanded="false"
+   aria-controls="more-new-courses"
+   (click)="toggleMoreLess()">{{ moreLessButtonText }}</p>
